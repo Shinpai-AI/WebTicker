@@ -26,14 +26,13 @@ The data is updated **hourly** and provides insights into:
 
 ## 🚀 View Live Dashboard
 
-**Option 1: GitHub Pages**
-- Visit: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html`
+**Main Dashboard:**
+- 🌐 **https://shinpai-ai.github.io/WebTicker/**
 
-**Option 2: Download HTML**
-- Download `TKB-WebTicker.html` and open locally
-
-**Option 3: Use JSON API**
-- Fetch stats from: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.json`
+**Alternative Access:**
+- Direct HTML: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html`
+- Download HTML: `TKB-WebTicker.html` and open locally
+- JSON API: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.json`
 
 ---
 
