@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-12-19T18:00:00Z",
+  "status": "initializing",
+  "message": "WebTicker setup in progress - real data coming soon!",
+  "balance": 0.00,
+  "equity": 0.00,
+  "profit_7d": 0.00,
+  "win_rate": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0
+}

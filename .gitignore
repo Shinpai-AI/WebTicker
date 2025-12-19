@@ -1,0 +1,41 @@
+# === SHARROW WEBTICKER - GITIGNORE ===
+# Nur JSON/HTML/Marker werden gepusht - alles andere bleibt lokal!
+
+# === SENSITIVE FILES (NEVER PUSH!) ===
+*.log
+*state.log
+*-config.json
+config.json
+*.key
+*.pem
+.env
+
+# === SOURCE CODE (stays local) ===
+*.py
+*.sh
+*.bat
+
+# === SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# === IDE FILES ===
+.vscode/
+.idea/
+*.sublime-*
+
+# === TEMP FILES ===
+*.tmp
+*.temp
+*.bak
+__pycache__/
+*.pyc
+
+# === ONLY THESE ARE PUSHED ===
+# TKB-WebTicker.json
+# TKB-WebTicker.html
+# TKB-WebTicker-welldone.txt
+# README.md
