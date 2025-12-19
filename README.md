@@ -26,11 +26,10 @@ The data is updated **hourly** and provides insights into:
 
 ## 🚀 View Live Dashboard
 
-**Main Dashboard:**
-- 🌐 **https://shinpai-ai.github.io/WebTicker/**
+**🌐 Live Dashboard:**
+- **[Click here to view Sharrow Live Stats!](https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html)**
 
 **Alternative Access:**
-- Direct HTML: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html`
 - Download HTML: `TKB-WebTicker.html` and open locally
 - JSON API: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.json`
 
