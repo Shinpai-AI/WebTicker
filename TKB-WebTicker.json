@@ -1,12 +1,1 @@
-{
-  "timestamp": "2025-12-19T18:00:00Z",
-  "status": "initializing",
-  "message": "WebTicker setup in progress - real data coming soon!",
-  "balance": 0.00,
-  "equity": 0.00,
-  "profit_7d": 0.00,
-  "win_rate": 0.0,
-  "total_trades": 0,
-  "winning_trades": 0,
-  "losing_trades": 0
-}
+{"meta":{"bot":"Goldjunge (Ray)","generated_at":"2025-12-19T18:25:27Z","snapshot_at":"2025-12-19T18:00:00Z","source_file":"Goldjunge-state.log","state_entries":6,"deals_processed":3,"window_days":7},"account":{"balance":173.73,"equity":173.12,"floating_pl":-0.61,"drawdown_7d":0.0,"drawdown_pct":0.0},"performance":{"profit_window":0.5,"gross_profit_window":0.5,"gross_loss_window":0.0,"profit_factor_window":0.0,"win_rate_window":100.0,"total_trades_window":3,"winning_trades_window":3,"losing_trades_window":0},"leaders":[{"symbol":"GBPCAD","profit":0.5,"trades":3,"wins":3,"losses":0}],"all_symbols":[{"symbol":"GBPCAD","profit":0.5,"trades":3,"wins":3,"losses":0}],"daily_breakdown":[{"date":"2025-12-19","profit":0.5,"trades":3}],"recent_trades":[{"ticket":163668402,"symbol":"GBPCAD","profit":0.17,"volume":0.01,"closed_at":"2025-12-19T17:28:34Z","tp":null,"sl":null},{"ticket":163664714,"symbol":"GBPCAD","profit":0.14,"volume":0.01,"closed_at":"2025-12-19T16:06:05Z","tp":null,"sl":null},{"ticket":163664626,"symbol":"GBPCAD","profit":0.19,"volume":0.01,"closed_at":"2025-12-19T16:04:36Z","tp":null,"sl":null}]}

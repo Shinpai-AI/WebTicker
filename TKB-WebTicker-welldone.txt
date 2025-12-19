@@ -1,3 +1,4 @@
-WebTicker Setup Complete!
-Timestamp: 2025-12-19 18:00:00
-Status: Ready for first data update
+2025-12-19T18:25:27Z
+snapshot=2025-12-19T18:00:00Z
+profit_window=0.5
+trades_window=3
