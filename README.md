@@ -1,70 +1,71 @@
-# 📊 Sharrow Live-Ticker (WebTicker)
+# 📊 Sharrow WebTicker
 
-Der WebTicker erzeugt aus MT5-Daten ein vollständiges Trading-Dashboard (JSON + HTML) und
-pusht die Ergebnisse stündlich nach GitHub. Alle Pfade & Optionen kommen aus der
-`../TKB-config.json`.
+Öffentliche Referenz von **Shinpai-AI (Hannes Kell)** für das interne Projekt **Goldjunge**.
+Der WebTicker visualisiert die aktuelle Performance des MetaTrader 5 EAs „Sharrow“ und
+liefert die Grundlage für Website-Einbindungen sowie Backoffice-Analysen.
 
----
-
-## 🔁 Überblick – Datenfluss
-
-1. `RUN-WebTicker.sh` kopiert die aktuelle `Goldjunge-state.log` aus MT5 (`MQL5/Files`).
-2. `TKB-WebTicker.py` liest die lokale Kopie + vorhandene `TKB-WebTicker.json`, merged neue Trades,
-   berechnet 7/30/365-Tage-Statistiken und rendert `TKB-WebTicker.html`.
-3. Bei Erfolg entsteht `TKB-WebTicker-welldone.txt`. Nur dann stößt das Runner-Skript den Git-Push
-   (oder später FTP/API) an.
-4. Das JSON dient gleichzeitig als Historien-Speicher und Website-Datenquelle.
-
-Alle Skripte liegen in diesem Ordner, die globale Config eine Ebene höher.
+- **Live-Dashboard:** https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html
 
 ---
 
-## 📁 Wichtige Dateien
+## 🚀 Was liefert der WebTicker?
 
-- `TKB-WebTicker.py` – Hauptskript (Merge, JSON, HTML, optional Upload)
-- `TKB-WebTicker-initial.py` – Initialimport aus Konto-Statement + state.log
-- `RUN-WebTicker.sh` – Cron-/Automationsskript (Copy, Call, Git-Push)
-- `webticker_lib.py` – Parser & Shared Utils (nicht anfassen)
-- `TKB-WebTicker.json` – Persistente History + aktuelle Ansicht
-- `TKB-WebTicker.html` – Fertiges Dashboard (für GitHub Pages / iframe)
-- `TKB-WebTicker-welldone.txt` – Marker für erfolgreichen Lauf
-- `TKB-WebTicker.log` – Lauf- und Fehlermeldungen
+- Kontostand, Equity und Floating P/L
+- Gewinn/Verlust für 7/30/365 Tage
+- Letzte zehn Trades inkl. Symbol, Profit und Kommentar
+- Top-/Tough-Performer (Symbolranking)
+- Pause-Banner bei deaktiviertem Handel (`trade_active=false`)
+
+Alle Daten werden als JSON (`TKB-WebTicker.json`) und als HTML-Dashboard bereitgestellt und
+stündlich via GitHub Pages veröffentlicht.
 
 ---
 
-## 🚀 Initiales Setup
+## 🔁 Pipeline (Kurzüberblick)
 
-Vor dem ersten Produktivlauf eine historische Basis erzeugen:
+1. **Kopieren** – `RUN-WebTicker.sh` zieht die aktuelle `Goldjunge-state.log` aus MT5.
+2. **Mergen** – `TKB-WebTicker.py` fügt neue Trades/Snapshots in die History ein und generiert JSON + HTML.
+3. **Deploy** – Bei Erfolg entsteht `TKB-WebTicker-welldone.txt` und ein Git-Push (bzw. später FTP/API).
+
+Die Konfiguration liegt eine Ebene höher in `../TKB-config.json`.
+
+---
+
+## 📁 Schlüsseldateien
+
+- `TKB-WebTicker.py` … Hauptlogik (Merge, Statistik, HTML/JSON)
+- `TKB-WebTicker-initial.py` … einmaliger Import aus Konto-Report und state.log
+- `RUN-WebTicker.sh` … Cron-/Automationsskript inkl. Git-Push
+- `webticker_lib.py` … Parser/Utilities
+- `TKB-WebTicker.json` … persistente History + Website-Feed
+- `TKB-WebTicker.html` … fertiges Dashboard für GitHub Pages
+
+---
+
+## 🧩 Initialer Import
 
 ```bash
 cd /media/shinpai/Shinpai-AI/Trading/Goldjunge/WebTicker
-/usr/bin/python3 TKB-WebTicker-initial.py \
-  --config ../TKB-config.json \
-  --statement ReportHistory-8304024.html \
-  --state-log ../MQL5/Files/Goldjunge-state.log \
-  --output TKB-WebTicker.json
+python3 TKB-WebTicker-initial.py
 ```
 
-Das Initialskript akzeptiert HTML- oder XLSX-Statements (gleicher Name wie in der Config) und
-bereitet alle Trades so auf, dass `TKB-WebTicker.py` anschließend inkrementell weiterarbeiten kann.
+Das Skript nutzt automatisch:
+- Config `../TKB-config.json`
+- Konto-Report aus `web_ticker.initial_statement`
+- State-Log aus `web_ticker.state_log` (lokal oder direkt aus dem MT5-Verzeichnis)
+
+Parameter wie `--statement`, `--state-log` oder `--output` bleiben für Spezialfälle verfügbar.
 
 ---
 
-## ⏱ Regulärer Lauf (Cron-ready)
+## ⏱ Regulärer Lauf / Cron
 
 ```bash
 cd /media/shinpai/Shinpai-AI/Trading/Goldjunge/WebTicker
 bash RUN-WebTicker.sh
 ```
 
-Das Runner-Skript erledigt:
-
-1. Config laden (`../TKB-config.json`)
-2. MT5 `Goldjunge-state.log` → lokales Arbeitsverzeichnis kopieren
-3. `TKB-WebTicker.py` ausführen (JSON/HTML/Welldone erzeugen, FTP optional)
-4. Welldone-Datei prüfen und anschließend Git-Autopush auslösen
-
-Cron-Eintrag (stündlich zur Minute 05):
+Typischer Cron-Eintrag (stündlich zur Minute 05):
 
 ```
 5 * * * * /media/shinpai/Shinpai-AI/Trading/Goldjunge/WebTicker/RUN-WebTicker.sh >> /var/log/webticker.cron 2>&1
@@ -72,52 +73,36 @@ Cron-Eintrag (stündlich zur Minute 05):
 
 ---
 
-## ⚙️ Config-Hooks (`../TKB-config.json`)
-
-Relevant sind vor allem diese Blöcke:
+## ⚙️ Relevante Config-Blöcke (`../TKB-config.json`)
 
 - `paths` → `mt5_path`, `mt5_files_subpath`, `python_bin`
 - `web_ticker`
-  - `state_log`, `output_json`, `output_html`, `welldone_file`, `log_file`
-  - `upload` (FTP-Stub, aktuell optional)
+  - `state_log`, `initial_statement`, `output_json`, `output_html`, `welldone_file`, `log_file`
+  - `upload` (für spätere FTP/API-Deployments)
 - `git_push`
   - `enabled`, `repo_path`, `branch`, `remote`, `ssh_key`, `commit_message`
-- `trade_active` + `trade_pause_message`
-  - Wenn `trade_active=false`, friert `TKB-WebTicker.py` die Kennzahlen ein und blendet
-    einen Hinweisbanner mit `trade_pause_message` im HTML ein.
+- `trade_active`, `trade_pause_message`
 
-Alle Pfade dürfen relativ zum WebTicker-Ordner oder absolut angegeben werden.
+Alle Pfadangaben können relativ zum WebTicker-Ordner oder absolut erfolgen.
 
 ---
 
-## 🖥 Output & Einbettung
+## 🖥 Einbettung / Verwendung
 
-- JSON / HTML liegen nach jedem Lauf hier im Ordner.
-- Wird der Ordner auf GitHub Pages veröffentlicht, kann der Live-Ticker per iframe eingebunden
-  werden:
-
-```html
-<iframe
-  src="https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.html"
-  title="Sharrow Live-Ticker"
-  style="width:100%;min-height:720px;border:none;">
-</iframe>
-```
-
-Das HTML enthält:
-- Kontostand & Equity Cards
-- Gewinn/Verlust für 7/30/365 Tage
-- Wochen/Monats/Jahresauswertung
-- Pause-Banner (wenn Handel deaktiviert)
-- Letzte 10 Trades + beste/schlechteste Symbole
+- JSON-Endpunkt: `https://shinpai-ai.github.io/WebTicker/TKB-WebTicker.json`
+- HTML/iframe direkt nutzbar (s. oben verlinktes Dashboard)
+- Für eigenständige Deployments können JSON und HTML auf jeden Webspace kopiert werden.
 
 ---
 
-## 🛠 Troubleshooting
+## ✅ Betrieb & Troubleshooting
 
-- Läufe protokolliert in `TKB-WebTicker.log`
-- Welldone-Datei fehlt → Python-Lauf fehlgeschlagen (Log prüfen)
-- `RUN-WebTicker.sh` bricht ab, wenn MT5-State-Log fehlt oder Git-Repo nicht erreichbar ist
-- Git-SSH-Key-Pfad muss in `git_push.ssh_key` hinterlegt sein (z. B. `/home/shinpai/.ssh/shinpai-ai`)
+- Lauf- und Fehlermeldungen: `TKB-WebTicker.log`
+- „Welldone“-Marker signalisiert erfolgreichen Lauf; fehlt er, Details im Log prüfen
+- Git-Push scheitert? Manuell `git pull --rebase` ausführen und Skript erneut starten
+- Bei deaktiviertem Handel (`trade_active=false`) friert das Dashboard die Kennzahlen ein und
+  blendet den Hinweistext `trade_pause_message` ein.
 
-Damit ist der WebTicker komplett automatisierbar und jederzeit reproduzierbar.
+Dieses Repository dient als transparente Referenz für alle Beteiligten von Shinpai-AI und
+zeigt jederzeit den realen Status des Sharrow-Projekts. Weitere Fragen gern an Hannes Kell /
+Shinpai-AI.  
