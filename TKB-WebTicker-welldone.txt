@@ -1,4 +1,3 @@
-2025-12-19T18:50:10Z
-snapshot=2025-12-19T18:00:00Z
-profit_window=0.5
-trades_window=3
+2025-12-20T14:44:41Z
+profit_7d=-4.35
+trades_7d=39
