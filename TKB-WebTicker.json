@@ -1,18 +1,18 @@
 {
   "meta": {
     "bot": "Goldjunge",
-    "generated_at": "2025-12-20T21:42:23Z",
-    "snapshot_at": "2025-12-19T21:00:00Z",
+    "generated_at": "2025-12-22T10:30:16Z",
+    "snapshot_at": "2025-12-22T10:00:00Z",
     "trade_active": false,
     "status": "paused",
     "pause_message": "Keine Trades wegen Markt-Turbulenzen. Wir sind bald wieder zurück!",
-    "pause_since": "2025-12-20T21:42:23Z"
+    "pause_since": "2025-12-22T10:30:16Z"
   },
   "account": {
     "balance": 173.9,
     "equity": 173.9,
     "floating": 0.0,
-    "snapshot_at": "2025-12-19T21:00:00Z"
+    "snapshot_at": "2025-12-22T10:00:00Z"
   },
   "overall": {
     "profit": -64.76,
@@ -23,25 +23,73 @@
   },
   "windows": {
     "7d": {
-      "profit": -4.68,
-      "trades": 37,
-      "wins": 25,
-      "losses": 12,
-      "win_rate": 67.57
+      "profit": -4.61,
+      "trades": 35,
+      "wins": 24,
+      "losses": 11,
+      "win_rate": 68.57,
+      "best_trade": {
+        "ticket": "100971555",
+        "symbol": "GBPCAD",
+        "profit": 0.87,
+        "volume": 0.01,
+        "closed_at": "2025-12-18T12:00:15Z",
+        "comment": "Sharrow v6.0 BUY (H1)"
+      },
+      "worst_trade": {
+        "ticket": "100993109",
+        "symbol": "NZDUSD",
+        "profit": -2.45,
+        "volume": 0.02,
+        "closed_at": "2025-12-19T13:20:11Z",
+        "comment": "Sharrow v6.0 BUY (H1)"
+      }
     },
     "30d": {
       "profit": -35.69,
       "trades": 102,
       "wins": 56,
       "losses": 43,
-      "win_rate": 54.9
+      "win_rate": 54.9,
+      "best_trade": {
+        "ticket": "100776869",
+        "symbol": "NZDCAD",
+        "profit": 2.88,
+        "volume": 0.02,
+        "closed_at": "2025-12-08T17:18:37Z",
+        "comment": "Goldjunge v6.0 BUY (H1)"
+      },
+      "worst_trade": {
+        "ticket": "100831448",
+        "symbol": "AUDCHF",
+        "profit": -6.65,
+        "volume": 0.02,
+        "closed_at": "2025-12-11T03:02:56Z",
+        "comment": "Sharrow v6.0 BUY (H1)"
+      }
     },
     "365d": {
       "profit": -64.76,
       "trades": 212,
       "wins": 114,
       "losses": 93,
-      "win_rate": 53.77
+      "win_rate": 53.77,
+      "best_trade": {
+        "ticket": "98663842",
+        "symbol": "CHFJPY",
+        "profit": 7.68,
+        "volume": 0.02,
+        "closed_at": "2025-10-08T21:43:06Z",
+        "comment": "Goldjunge v3.0 SELL (H1)"
+      },
+      "worst_trade": {
+        "ticket": "98591492",
+        "symbol": "AUDJPY",
+        "profit": -7.65,
+        "volume": 0.03,
+        "closed_at": "2025-10-06T21:05:00Z",
+        "comment": "Goldjunge v3.0 SELL (H1)"
+      }
     }
   },
   "top_symbols": [
@@ -211,11 +259,6 @@
     }
   ],
   "daily_breakdown": [
-    {
-      "date": "2025-12-15",
-      "profit": -0.06999999999999995,
-      "trades": 2
-    },
     {
       "date": "2025-12-17",
       "profit": -1.6600000000000001,
@@ -2789,6 +2832,78 @@
       },
       {
         "timestamp": "2025-12-19T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-21T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-22T10:00:00Z",
         "balance": 173.9,
         "equity": 173.9,
         "floating": 0.0
