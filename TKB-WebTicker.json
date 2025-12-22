@@ -1,12 +1,12 @@
 {
   "meta": {
     "bot": "Goldjunge",
-    "generated_at": "2025-12-22T10:30:16Z",
+    "generated_at": "2025-12-22T10:40:35Z",
     "snapshot_at": "2025-12-22T10:00:00Z",
     "trade_active": false,
     "status": "paused",
     "pause_message": "Keine Trades wegen Markt-Turbulenzen. Wir sind bald wieder zurück!",
-    "pause_since": "2025-12-22T10:30:16Z"
+    "pause_since": "2025-12-22T10:40:35Z"
   },
   "account": {
     "balance": 173.9,
@@ -33,16 +33,18 @@
         "symbol": "GBPCAD",
         "profit": 0.87,
         "volume": 0.01,
+        "order_type": "BUY",
         "closed_at": "2025-12-18T12:00:15Z",
-        "comment": "Sharrow v6.0 BUY (H1)"
+        "exit": "Exit"
       },
       "worst_trade": {
         "ticket": "100993109",
         "symbol": "NZDUSD",
         "profit": -2.45,
         "volume": 0.02,
+        "order_type": "BUY",
         "closed_at": "2025-12-19T13:20:11Z",
-        "comment": "Sharrow v6.0 BUY (H1)"
+        "exit": "Exit"
       }
     },
     "30d": {
@@ -56,16 +58,18 @@
         "symbol": "NZDCAD",
         "profit": 2.88,
         "volume": 0.02,
+        "order_type": "BUY",
         "closed_at": "2025-12-08T17:18:37Z",
-        "comment": "Goldjunge v6.0 BUY (H1)"
+        "exit": "Exit"
       },
       "worst_trade": {
         "ticket": "100831448",
         "symbol": "AUDCHF",
         "profit": -6.65,
         "volume": 0.02,
+        "order_type": "BUY",
         "closed_at": "2025-12-11T03:02:56Z",
-        "comment": "Sharrow v6.0 BUY (H1)"
+        "exit": "Exit"
       }
     },
     "365d": {
@@ -79,16 +83,18 @@
         "symbol": "CHFJPY",
         "profit": 7.68,
         "volume": 0.02,
+        "order_type": "SELL",
         "closed_at": "2025-10-08T21:43:06Z",
-        "comment": "Goldjunge v3.0 SELL (H1)"
+        "exit": "Exit"
       },
       "worst_trade": {
         "ticket": "98591492",
         "symbol": "AUDJPY",
         "profit": -7.65,
         "volume": 0.03,
+        "order_type": "SELL",
         "closed_at": "2025-10-06T21:05:00Z",
-        "comment": "Goldjunge v3.0 SELL (H1)"
+        "exit": "Exit"
       }
     }
   },
@@ -180,81 +186,101 @@
     {
       "ticket": "163671132",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.17,
+      "volume": 0.01,
+      "order_type": "DEAL_TYPE_SELL",
       "closed_at": "2025-12-19T19:01:45Z",
+      "exit": "Exit",
       "comment": "[sl 1.84441]"
     },
     {
       "ticket": "101007684",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.17,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T19:01:45Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "101005875",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.17,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T17:28:34Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "101003632",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.14,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T16:06:05Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "101003378",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.19,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T16:04:36Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "100993109",
       "symbol": "NZDUSD",
-      "volume": 0.02,
       "profit": -2.45,
+      "volume": 0.02,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T13:20:11Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "100991864",
       "symbol": "NZDUSD",
-      "volume": 0.02,
       "profit": 0.24,
+      "volume": 0.02,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T08:07:11Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "100991261",
       "symbol": "NZDUSD",
-      "volume": 0.02,
       "profit": -2.36,
+      "volume": 0.02,
+      "order_type": "BUY",
       "closed_at": "2025-12-19T07:44:21Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "100971923",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.32,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-18T12:34:31Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
       "ticket": "100971570",
       "symbol": "GBPCAD",
-      "volume": 0.01,
       "profit": 0.28,
+      "volume": 0.01,
+      "order_type": "BUY",
       "closed_at": "2025-12-18T12:00:19Z",
+      "exit": "Exit",
       "comment": "Sharrow v6.0 BUY (H1)"
     }
   ],
