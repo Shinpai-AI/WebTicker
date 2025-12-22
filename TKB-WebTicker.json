@@ -1,33 +1,30 @@
 {
   "meta": {
-    "bot": "Goldjunge",
-    "generated_at": "2025-12-22T10:59:00Z",
-    "snapshot_at": "2025-12-22T10:00:00Z",
-    "trade_active": false,
-    "status": "paused",
-    "pause_message": "Keine Trades wegen Markt-Turbulenzen. Wir sind bald wieder zurück!",
-    "pause_since": "2025-12-22T10:59:00Z"
+    "bot": "Goldjunge (Ray)",
+    "generated_at": "2025-12-22T11:49:48Z",
+    "snapshot_at": "2025-12-19T19:00:00Z",
+    "trade_active": true
   },
   "account": {
-    "balance": 173.9,
-    "equity": 173.9,
-    "floating": 0.0,
-    "snapshot_at": "2025-12-22T10:00:00Z"
+    "balance": 173.73,
+    "equity": 174.0,
+    "floating": 0.27,
+    "snapshot_at": "2025-12-19T19:00:00Z"
   },
   "overall": {
-    "profit": -64.76,
-    "trades": 212,
-    "wins": 114,
+    "profit": -64.43,
+    "trades": 214,
+    "wins": 116,
     "losses": 93,
-    "win_rate": 53.77
+    "win_rate": 54.21
   },
   "windows": {
     "7d": {
-      "profit": -4.61,
-      "trades": 35,
-      "wins": 24,
+      "profit": -4.28,
+      "trades": 37,
+      "wins": 26,
       "losses": 11,
-      "win_rate": 68.57,
+      "win_rate": 70.27,
       "best_trade": {
         "ticket": "100971555",
         "symbol": "GBPCAD",
@@ -35,7 +32,8 @@
         "volume": 0.01,
         "order_type": "BUY",
         "closed_at": "2025-12-18T12:00:15Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       },
       "worst_trade": {
         "ticket": "100993109",
@@ -44,15 +42,16 @@
         "volume": 0.02,
         "order_type": "BUY",
         "closed_at": "2025-12-19T13:20:11Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       }
     },
     "30d": {
-      "profit": -35.69,
-      "trades": 102,
-      "wins": 56,
+      "profit": -35.36,
+      "trades": 104,
+      "wins": 58,
       "losses": 43,
-      "win_rate": 54.9,
+      "win_rate": 55.77,
       "best_trade": {
         "ticket": "100776869",
         "symbol": "NZDCAD",
@@ -60,7 +59,8 @@
         "volume": 0.02,
         "order_type": "BUY",
         "closed_at": "2025-12-08T17:18:37Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       },
       "worst_trade": {
         "ticket": "100831448",
@@ -69,15 +69,16 @@
         "volume": 0.02,
         "order_type": "BUY",
         "closed_at": "2025-12-11T03:02:56Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       }
     },
     "365d": {
-      "profit": -64.76,
-      "trades": 212,
-      "wins": 114,
+      "profit": -64.43,
+      "trades": 214,
+      "wins": 116,
       "losses": 93,
-      "win_rate": 53.77,
+      "win_rate": 54.21,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -85,7 +86,8 @@
         "volume": 0.02,
         "order_type": "SELL",
         "closed_at": "2025-10-08T21:43:06Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       },
       "worst_trade": {
         "ticket": "98591492",
@@ -94,7 +96,8 @@
         "volume": 0.03,
         "order_type": "SELL",
         "closed_at": "2025-10-06T21:05:00Z",
-        "exit": "Exit"
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       }
     }
   },
@@ -125,9 +128,9 @@
     },
     {
       "symbol": "GBPCAD",
-      "profit": 1.5299999999999998,
-      "trades": 19,
-      "wins": 16,
+      "profit": 1.8599999999999999,
+      "trades": 21,
+      "wins": 18,
       "losses": 3,
       "rank": 4
     },
@@ -184,24 +187,26 @@
   ],
   "recent_trades": [
     {
-      "ticket": "163671132",
-      "symbol": "GBPCAD",
-      "profit": 0.17,
-      "volume": 0.01,
-      "order_type": "SELL",
-      "closed_at": "2025-12-19T19:01:45Z",
-      "exit": "Exit",
-      "comment": "[sl 1.84441]"
-    },
-    {
       "ticket": "101007684",
       "symbol": "GBPCAD",
       "profit": 0.17,
       "volume": 0.01,
       "order_type": "BUY",
       "closed_at": "2025-12-19T19:01:45Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
+    },
+    {
+      "ticket": "163668402",
+      "symbol": "GBPCAD",
+      "profit": 0.17,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2025-12-19T17:28:34Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 1.84390]"
     },
     {
       "ticket": "101005875",
@@ -210,8 +215,20 @@
       "volume": 0.01,
       "order_type": "BUY",
       "closed_at": "2025-12-19T17:28:34Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
+    },
+    {
+      "ticket": "163664714",
+      "symbol": "GBPCAD",
+      "profit": 0.14,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2025-12-19T16:06:05Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 1.84280]"
     },
     {
       "ticket": "101003632",
@@ -220,8 +237,20 @@
       "volume": 0.01,
       "order_type": "BUY",
       "closed_at": "2025-12-19T16:06:05Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
+    },
+    {
+      "ticket": "163664626",
+      "symbol": "GBPCAD",
+      "profit": 0.19,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2025-12-19T16:04:36Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 1.84223]"
     },
     {
       "ticket": "101003378",
@@ -230,7 +259,8 @@
       "volume": 0.01,
       "order_type": "BUY",
       "closed_at": "2025-12-19T16:04:36Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
@@ -240,7 +270,8 @@
       "volume": 0.02,
       "order_type": "BUY",
       "closed_at": "2025-12-19T13:20:11Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
@@ -250,7 +281,8 @@
       "volume": 0.02,
       "order_type": "BUY",
       "closed_at": "2025-12-19T08:07:11Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
     },
     {
@@ -260,27 +292,8 @@
       "volume": 0.02,
       "order_type": "BUY",
       "closed_at": "2025-12-19T07:44:21Z",
-      "exit": "Exit",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100971923",
-      "symbol": "GBPCAD",
-      "profit": 0.32,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-18T12:34:31Z",
-      "exit": "Exit",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100971570",
-      "symbol": "GBPCAD",
-      "profit": 0.28,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-18T12:00:19Z",
-      "exit": "Exit",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
       "comment": "Sharrow v6.0 BUY (H1)"
     }
   ],
@@ -297,8 +310,8 @@
     },
     {
       "date": "2025-12-19",
-      "profit": -3.7300000000000004,
-      "trades": 8
+      "profit": -3.4,
+      "trades": 10
     }
   ],
   "history": {
@@ -314,7 +327,8 @@
         "opened_at": "2025-07-21T10:14:20Z",
         "closed_at": "2025-07-21T12:12:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96269344",
@@ -326,7 +340,8 @@
         "opened_at": "2025-07-21T09:14:20Z",
         "closed_at": "2025-07-21T14:09:20Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96270928",
@@ -338,7 +353,8 @@
         "opened_at": "2025-07-21T10:14:20Z",
         "closed_at": "2025-07-21T14:46:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96298148",
@@ -350,7 +366,8 @@
         "opened_at": "2025-07-21T14:46:12Z",
         "closed_at": "2025-07-21T15:11:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96276380",
@@ -362,7 +379,8 @@
         "opened_at": "2025-07-21T12:12:54Z",
         "closed_at": "2025-07-21T15:19:43Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96291298",
@@ -374,7 +392,8 @@
         "opened_at": "2025-07-21T14:09:20Z",
         "closed_at": "2025-07-21T16:13:13Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96301189",
@@ -386,7 +405,8 @@
         "opened_at": "2025-07-21T16:00:00Z",
         "closed_at": "2025-07-21T16:15:42Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96299337",
@@ -398,7 +418,8 @@
         "opened_at": "2025-07-21T15:11:31Z",
         "closed_at": "2025-07-21T16:15:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96301736",
@@ -410,7 +431,8 @@
         "opened_at": "2025-07-21T16:15:43Z",
         "closed_at": "2025-07-21T18:57:46Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96301745",
@@ -422,7 +444,8 @@
         "opened_at": "2025-07-21T16:15:58Z",
         "closed_at": "2025-07-21T18:57:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96308604",
@@ -434,7 +457,8 @@
         "opened_at": "2025-07-21T18:57:55Z",
         "closed_at": "2025-07-22T13:14:24Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96330639",
@@ -446,7 +470,8 @@
         "opened_at": "2025-07-22T13:14:24Z",
         "closed_at": "2025-07-22T13:16:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96308599",
@@ -458,7 +483,8 @@
         "opened_at": "2025-07-21T18:57:46Z",
         "closed_at": "2025-07-22T14:49:24Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96330714",
@@ -470,7 +496,8 @@
         "opened_at": "2025-07-22T13:16:12Z",
         "closed_at": "2025-07-22T14:53:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96341268",
@@ -482,7 +509,8 @@
         "opened_at": "2025-07-22T14:53:12Z",
         "closed_at": "2025-07-22T15:17:27Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96341107",
@@ -494,7 +522,8 @@
         "opened_at": "2025-07-22T14:49:25Z",
         "closed_at": "2025-07-22T15:27:14Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96342346",
@@ -506,7 +535,8 @@
         "opened_at": "2025-07-22T15:17:27Z",
         "closed_at": "2025-07-22T15:28:57Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96308237",
@@ -518,7 +548,8 @@
         "opened_at": "2025-07-21T18:28:19Z",
         "closed_at": "2025-07-22T15:56:22Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96342669",
@@ -530,7 +561,8 @@
         "opened_at": "2025-07-22T15:27:14Z",
         "closed_at": "2025-07-22T16:07:59Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96343813",
@@ -542,7 +574,8 @@
         "opened_at": "2025-07-22T16:08:00Z",
         "closed_at": "2025-07-22T16:26:56Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96344312",
@@ -554,7 +587,8 @@
         "opened_at": "2025-07-22T16:25:03Z",
         "closed_at": "2025-07-22T19:10:27Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96344423",
@@ -566,7 +600,8 @@
         "opened_at": "2025-07-22T16:27:19Z",
         "closed_at": "2025-07-22T19:12:46Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96344474",
@@ -578,7 +613,8 @@
         "opened_at": "2025-07-22T16:28:32Z",
         "closed_at": "2025-07-22T19:14:03Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96348259",
@@ -590,7 +626,8 @@
         "opened_at": "2025-07-22T19:12:15Z",
         "closed_at": "2025-07-22T19:27:24Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96348426",
@@ -602,7 +639,8 @@
         "opened_at": "2025-07-22T19:25:31Z",
         "closed_at": "2025-07-22T20:25:42Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96348448",
@@ -614,7 +652,8 @@
         "opened_at": "2025-07-22T19:27:53Z",
         "closed_at": "2025-07-22T20:28:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96348475",
@@ -626,7 +665,8 @@
         "opened_at": "2025-07-22T19:29:02Z",
         "closed_at": "2025-07-22T20:29:08Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96349437",
@@ -638,7 +678,8 @@
         "opened_at": "2025-07-22T20:25:44Z",
         "closed_at": "2025-07-22T20:45:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96349442",
@@ -650,7 +691,8 @@
         "opened_at": "2025-07-22T20:28:15Z",
         "closed_at": "2025-07-22T21:51:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96349743",
@@ -662,7 +704,8 @@
         "opened_at": "2025-07-22T21:50:11Z",
         "closed_at": "2025-07-22T23:20:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96349742",
@@ -674,7 +717,8 @@
         "opened_at": "2025-07-22T21:50:08Z",
         "closed_at": "2025-07-22T23:20:59Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96350291",
@@ -686,7 +730,8 @@
         "opened_at": "2025-07-22T23:20:31Z",
         "closed_at": "2025-07-22T23:21:26Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96349757",
@@ -698,7 +743,8 @@
         "opened_at": "2025-07-22T21:51:24Z",
         "closed_at": "2025-07-22T23:21:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96350321",
@@ -710,7 +756,8 @@
         "opened_at": "2025-07-22T23:21:28Z",
         "closed_at": "2025-07-23T00:06:36Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96350716",
@@ -722,7 +769,8 @@
         "opened_at": "2025-07-23T00:05:32Z",
         "closed_at": "2025-07-23T01:20:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96350733",
@@ -734,7 +782,8 @@
         "opened_at": "2025-07-23T00:06:41Z",
         "closed_at": "2025-07-23T01:21:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96350725",
@@ -746,7 +795,8 @@
         "opened_at": "2025-07-23T00:06:04Z",
         "closed_at": "2025-07-23T01:21:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96351478",
@@ -758,7 +808,8 @@
         "opened_at": "2025-07-23T01:20:37Z",
         "closed_at": "2025-07-23T01:21:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96351486",
@@ -770,7 +821,8 @@
         "opened_at": "2025-07-23T01:21:01Z",
         "closed_at": "2025-07-23T01:21:45Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96351504",
@@ -782,7 +834,8 @@
         "opened_at": "2025-07-23T01:21:49Z",
         "closed_at": "2025-07-23T02:51:55Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96352517",
@@ -794,7 +847,8 @@
         "opened_at": "2025-07-23T02:51:56Z",
         "closed_at": "2025-07-23T05:35:25Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96352513",
@@ -806,7 +860,8 @@
         "opened_at": "2025-07-23T02:50:48Z",
         "closed_at": "2025-07-23T05:51:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96354026",
@@ -818,7 +873,8 @@
         "opened_at": "2025-07-23T05:35:25Z",
         "closed_at": "2025-07-23T05:51:50Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96352515",
@@ -830,7 +886,8 @@
         "opened_at": "2025-07-23T02:51:14Z",
         "closed_at": "2025-07-23T05:52:00Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96354247",
@@ -842,7 +899,8 @@
         "opened_at": "2025-07-23T05:51:05Z",
         "closed_at": "2025-07-23T05:52:15Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96359707",
@@ -854,7 +912,8 @@
         "opened_at": "2025-07-23T08:42:55Z",
         "closed_at": "2025-07-23T09:14:51Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96354284",
@@ -866,7 +925,8 @@
         "opened_at": "2025-07-23T05:52:09Z",
         "closed_at": "2025-07-23T09:44:08Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "96359708",
@@ -878,7 +938,8 @@
         "opened_at": "2025-07-23T08:42:55Z",
         "closed_at": "2025-07-23T09:44:13Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98578020",
@@ -890,7 +951,8 @@
         "opened_at": "2025-10-06T07:40:28Z",
         "closed_at": "2025-10-06T07:40:39Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98580023",
@@ -902,7 +964,8 @@
         "opened_at": "2025-10-06T08:24:25Z",
         "closed_at": "2025-10-06T08:25:42Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98583617",
@@ -914,7 +977,8 @@
         "opened_at": "2025-10-06T10:54:38Z",
         "closed_at": "2025-10-06T10:57:43Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98583384",
@@ -926,7 +990,8 @@
         "opened_at": "2025-10-06T10:50:17Z",
         "closed_at": "2025-10-06T11:04:10Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98583680",
@@ -938,7 +1003,8 @@
         "opened_at": "2025-10-06T10:57:43Z",
         "closed_at": "2025-10-06T11:04:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98585114",
@@ -950,7 +1016,8 @@
         "opened_at": "2025-10-06T11:41:54Z",
         "closed_at": "2025-10-06T11:43:53Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98585147",
@@ -962,7 +1029,8 @@
         "opened_at": "2025-10-06T11:43:53Z",
         "closed_at": "2025-10-06T11:44:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98580048",
@@ -974,7 +1042,8 @@
         "opened_at": "2025-10-06T08:25:43Z",
         "closed_at": "2025-10-06T12:11:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98587096",
@@ -986,7 +1055,8 @@
         "opened_at": "2025-10-06T12:15:01Z",
         "closed_at": "2025-10-06T12:17:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98587191",
@@ -998,7 +1068,8 @@
         "opened_at": "2025-10-06T12:17:11Z",
         "closed_at": "2025-10-06T12:23:25Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98587532",
@@ -1010,7 +1081,8 @@
         "opened_at": "2025-10-06T12:25:28Z",
         "closed_at": "2025-10-06T12:25:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98585435",
@@ -1022,7 +1094,8 @@
         "opened_at": "2025-10-06T11:58:06Z",
         "closed_at": "2025-10-06T13:49:07Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98592938",
@@ -1034,7 +1107,8 @@
         "opened_at": "2025-10-06T13:51:59Z",
         "closed_at": "2025-10-06T13:55:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98596063",
@@ -1046,7 +1120,8 @@
         "opened_at": "2025-10-06T14:20:47Z",
         "closed_at": "2025-10-06T14:36:10Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98597326",
@@ -1058,7 +1133,8 @@
         "opened_at": "2025-10-06T14:36:10Z",
         "closed_at": "2025-10-06T14:56:23Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98597907",
@@ -1070,7 +1146,8 @@
         "opened_at": "2025-10-06T14:47:53Z",
         "closed_at": "2025-10-06T15:13:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98601732",
@@ -1082,7 +1159,8 @@
         "opened_at": "2025-10-06T15:37:00Z",
         "closed_at": "2025-10-06T15:42:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98607520",
@@ -1094,7 +1172,8 @@
         "opened_at": "2025-10-06T16:56:44Z",
         "closed_at": "2025-10-06T17:09:47Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98598593",
@@ -1106,7 +1185,8 @@
         "opened_at": "2025-10-06T14:56:23Z",
         "closed_at": "2025-10-06T17:11:07Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98610456",
@@ -1118,7 +1198,8 @@
         "opened_at": "2025-10-06T17:55:58Z",
         "closed_at": "2025-10-06T19:58:00Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98591492",
@@ -1130,7 +1211,8 @@
         "opened_at": "2025-10-06T13:34:23Z",
         "closed_at": "2025-10-06T21:05:00Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98631341",
@@ -1142,7 +1224,8 @@
         "opened_at": "2025-10-07T12:50:11Z",
         "closed_at": "2025-10-07T12:55:29Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98632199",
@@ -1154,7 +1237,8 @@
         "opened_at": "2025-10-07T12:55:29Z",
         "closed_at": "2025-10-07T13:06:53Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98637626",
@@ -1166,7 +1250,8 @@
         "opened_at": "2025-10-07T13:52:40Z",
         "closed_at": "2025-10-07T14:15:59Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98642670",
@@ -1178,7 +1263,8 @@
         "opened_at": "2025-10-07T15:31:58Z",
         "closed_at": "2025-10-07T15:33:14Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98642555",
@@ -1190,7 +1276,8 @@
         "opened_at": "2025-10-07T15:29:00Z",
         "closed_at": "2025-10-07T15:34:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98643266",
@@ -1202,7 +1289,8 @@
         "opened_at": "2025-10-07T15:40:10Z",
         "closed_at": "2025-10-07T15:51:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98642748",
@@ -1214,7 +1302,8 @@
         "opened_at": "2025-10-07T15:33:14Z",
         "closed_at": "2025-10-07T15:59:55Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98642780",
@@ -1226,7 +1315,8 @@
         "opened_at": "2025-10-07T15:33:54Z",
         "closed_at": "2025-10-07T16:34:14Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646081",
@@ -1238,7 +1328,8 @@
         "opened_at": "2025-10-07T16:42:16Z",
         "closed_at": "2025-10-07T16:42:55Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646134",
@@ -1250,7 +1341,8 @@
         "opened_at": "2025-10-07T16:42:55Z",
         "closed_at": "2025-10-07T16:43:32Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646056",
@@ -1262,7 +1354,8 @@
         "opened_at": "2025-10-07T16:41:31Z",
         "closed_at": "2025-10-07T16:45:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646190",
@@ -1274,7 +1367,8 @@
         "opened_at": "2025-10-07T16:45:33Z",
         "closed_at": "2025-10-07T16:50:21Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646332",
@@ -1286,7 +1380,8 @@
         "opened_at": "2025-10-07T16:52:09Z",
         "closed_at": "2025-10-07T16:58:39Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98644360",
@@ -1298,7 +1393,8 @@
         "opened_at": "2025-10-07T15:58:39Z",
         "closed_at": "2025-10-07T17:03:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98646442",
@@ -1310,7 +1406,8 @@
         "opened_at": "2025-10-07T16:58:39Z",
         "closed_at": "2025-10-07T17:08:28Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98647735",
@@ -1322,7 +1419,8 @@
         "opened_at": "2025-10-07T17:48:57Z",
         "closed_at": "2025-10-07T17:58:12Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98647883",
@@ -1334,7 +1432,8 @@
         "opened_at": "2025-10-07T17:58:13Z",
         "closed_at": "2025-10-07T18:00:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98647788",
@@ -1346,7 +1445,8 @@
         "opened_at": "2025-10-07T17:50:58Z",
         "closed_at": "2025-10-07T18:19:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98649056",
@@ -1358,7 +1458,8 @@
         "opened_at": "2025-10-07T18:49:25Z",
         "closed_at": "2025-10-07T18:50:17Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98649078",
@@ -1370,7 +1471,8 @@
         "opened_at": "2025-10-07T18:53:39Z",
         "closed_at": "2025-10-07T18:55:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98649096",
@@ -1382,7 +1484,8 @@
         "opened_at": "2025-10-07T18:55:02Z",
         "closed_at": "2025-10-07T18:57:25Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98650395",
@@ -1394,7 +1497,8 @@
         "opened_at": "2025-10-07T21:49:46Z",
         "closed_at": "2025-10-08T01:46:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98656783",
@@ -1406,7 +1510,8 @@
         "opened_at": "2025-10-08T06:23:24Z",
         "closed_at": "2025-10-08T06:26:16Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98656944",
@@ -1418,7 +1523,8 @@
         "opened_at": "2025-10-08T06:35:11Z",
         "closed_at": "2025-10-08T06:41:45Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98656854",
@@ -1430,7 +1536,8 @@
         "opened_at": "2025-10-08T06:28:57Z",
         "closed_at": "2025-10-08T06:42:27Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98657057",
@@ -1442,7 +1549,8 @@
         "opened_at": "2025-10-08T06:42:27Z",
         "closed_at": "2025-10-08T06:47:49Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98657034",
@@ -1454,7 +1562,8 @@
         "opened_at": "2025-10-08T06:41:46Z",
         "closed_at": "2025-10-08T06:54:16Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98657135",
@@ -1466,7 +1575,8 @@
         "opened_at": "2025-10-08T06:47:50Z",
         "closed_at": "2025-10-08T07:00:34Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98658540",
@@ -1478,7 +1588,8 @@
         "opened_at": "2025-10-08T07:29:31Z",
         "closed_at": "2025-10-08T07:32:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98657260",
@@ -1490,7 +1601,8 @@
         "opened_at": "2025-10-08T06:54:18Z",
         "closed_at": "2025-10-08T07:34:15Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98658613",
@@ -1502,7 +1614,8 @@
         "opened_at": "2025-10-08T07:32:31Z",
         "closed_at": "2025-10-08T07:36:26Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98658722",
@@ -1514,7 +1627,8 @@
         "opened_at": "2025-10-08T07:37:31Z",
         "closed_at": "2025-10-08T07:39:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98658772",
@@ -1526,7 +1640,8 @@
         "opened_at": "2025-10-08T07:39:40Z",
         "closed_at": "2025-10-08T08:37:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98658849",
@@ -1538,7 +1653,8 @@
         "opened_at": "2025-10-08T07:43:30Z",
         "closed_at": "2025-10-08T08:50:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98660430",
@@ -1550,7 +1666,8 @@
         "opened_at": "2025-10-08T08:50:38Z",
         "closed_at": "2025-10-08T08:55:44Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98660358",
@@ -1562,7 +1679,8 @@
         "opened_at": "2025-10-08T08:46:01Z",
         "closed_at": "2025-10-08T09:02:53Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98661786",
@@ -1574,7 +1692,8 @@
         "opened_at": "2025-10-08T09:44:21Z",
         "closed_at": "2025-10-08T09:53:00Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98662076",
@@ -1586,7 +1705,8 @@
         "opened_at": "2025-10-08T09:53:00Z",
         "closed_at": "2025-10-08T10:30:23Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98660501",
@@ -1598,7 +1718,8 @@
         "opened_at": "2025-10-08T08:55:44Z",
         "closed_at": "2025-10-08T13:48:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98671176",
@@ -1610,7 +1731,8 @@
         "opened_at": "2025-10-08T13:48:02Z",
         "closed_at": "2025-10-08T21:43:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "98663842",
@@ -1622,7 +1744,8 @@
         "opened_at": "2025-10-08T10:47:31Z",
         "closed_at": "2025-10-08T21:43:06Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100504338",
@@ -1634,7 +1757,8 @@
         "opened_at": "2025-11-27T07:49:00Z",
         "closed_at": "2025-11-27T08:04:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100506632",
@@ -1646,7 +1770,8 @@
         "opened_at": "2025-11-27T09:51:36Z",
         "closed_at": "2025-11-27T10:11:18Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100506612",
@@ -1658,7 +1783,8 @@
         "opened_at": "2025-11-27T09:50:00Z",
         "closed_at": "2025-11-27T10:25:08Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100514811",
@@ -1670,7 +1796,8 @@
         "opened_at": "2025-11-28T06:50:22Z",
         "closed_at": "2025-11-28T07:55:35Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100515552",
@@ -1682,7 +1809,8 @@
         "opened_at": "2025-11-28T07:55:35Z",
         "closed_at": "2025-11-28T08:54:15Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100516742",
@@ -1694,7 +1822,8 @@
         "opened_at": "2025-11-28T08:54:15Z",
         "closed_at": "2025-11-28T09:08:49Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100517405",
@@ -1706,7 +1835,8 @@
         "opened_at": "2025-11-28T10:11:07Z",
         "closed_at": "2025-11-28T10:15:36Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100517748",
@@ -1718,7 +1848,8 @@
         "opened_at": "2025-11-28T11:09:24Z",
         "closed_at": "2025-11-28T11:23:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100518142",
@@ -1730,7 +1861,8 @@
         "opened_at": "2025-11-28T12:12:02Z",
         "closed_at": "2025-11-28T12:17:45Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100518213",
@@ -1742,7 +1874,8 @@
         "opened_at": "2025-11-28T12:17:45Z",
         "closed_at": "2025-11-28T12:27:25Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100518293",
@@ -1754,7 +1887,8 @@
         "opened_at": "2025-11-28T12:31:14Z",
         "closed_at": "2025-11-28T13:58:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100523819",
@@ -1766,7 +1900,8 @@
         "opened_at": "2025-11-28T15:53:08Z",
         "closed_at": "2025-11-28T15:57:32Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100531248",
@@ -1778,7 +1913,8 @@
         "opened_at": "2025-11-28T15:57:32Z",
         "closed_at": "2025-11-28T15:58:49Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100583743",
@@ -1790,7 +1926,8 @@
         "opened_at": "2025-11-28T16:30:42Z",
         "closed_at": "2025-11-28T17:05:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100591423",
@@ -1802,7 +1939,8 @@
         "opened_at": "2025-11-28T16:35:20Z",
         "closed_at": "2025-12-01T07:27:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100636634",
@@ -1814,7 +1952,8 @@
         "opened_at": "2025-12-01T06:00:00Z",
         "closed_at": "2025-12-01T08:49:35Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100639682",
@@ -1826,7 +1965,8 @@
         "opened_at": "2025-12-01T08:49:35Z",
         "closed_at": "2025-12-01T10:18:59Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100639947",
@@ -1838,7 +1978,8 @@
         "opened_at": "2025-12-01T09:00:00Z",
         "closed_at": "2025-12-01T10:49:05Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100642614",
@@ -1850,7 +1991,8 @@
         "opened_at": "2025-12-01T11:00:00Z",
         "closed_at": "2025-12-01T12:10:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100643664",
@@ -1862,7 +2004,8 @@
         "opened_at": "2025-12-01T12:10:11Z",
         "closed_at": "2025-12-01T12:21:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100643852",
@@ -1874,7 +2017,8 @@
         "opened_at": "2025-12-01T12:21:37Z",
         "closed_at": "2025-12-01T12:44:19Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100644372",
@@ -1886,7 +2030,8 @@
         "opened_at": "2025-12-01T12:44:19Z",
         "closed_at": "2025-12-01T12:47:05Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100644529",
@@ -1898,7 +2043,8 @@
         "opened_at": "2025-12-01T12:47:05Z",
         "closed_at": "2025-12-01T14:04:46Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100642613",
@@ -1910,7 +2056,8 @@
         "opened_at": "2025-12-01T11:00:00Z",
         "closed_at": "2025-12-01T14:52:03Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100649936",
@@ -1922,7 +2069,8 @@
         "opened_at": "2025-12-01T15:00:00Z",
         "closed_at": "2025-12-01T15:02:16Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100650037",
@@ -1934,7 +2082,8 @@
         "opened_at": "2025-12-01T15:02:16Z",
         "closed_at": "2025-12-01T15:15:00Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100647263",
@@ -1946,7 +2095,8 @@
         "opened_at": "2025-12-01T14:04:46Z",
         "closed_at": "2025-12-01T15:30:13Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100651874",
@@ -1958,7 +2108,8 @@
         "opened_at": "2025-12-01T15:30:13Z",
         "closed_at": "2025-12-01T15:55:23Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100654486",
@@ -1970,7 +2121,8 @@
         "opened_at": "2025-12-01T17:02:55Z",
         "closed_at": "2025-12-01T17:10:05Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100652660",
@@ -1982,7 +2134,8 @@
         "opened_at": "2025-12-01T15:55:23Z",
         "closed_at": "2025-12-01T17:10:06Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100767194",
@@ -1994,7 +2147,8 @@
         "opened_at": "2025-12-08T08:52:20Z",
         "closed_at": "2025-12-08T10:25:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100767315",
@@ -2006,7 +2160,8 @@
         "opened_at": "2025-12-08T08:58:39Z",
         "closed_at": "2025-12-08T12:04:10Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100771951",
@@ -2018,7 +2173,8 @@
         "opened_at": "2025-12-08T13:46:02Z",
         "closed_at": "2025-12-08T14:04:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100770770",
@@ -2030,7 +2186,8 @@
         "opened_at": "2025-12-08T12:54:11Z",
         "closed_at": "2025-12-08T14:17:44Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100773834",
@@ -2042,7 +2199,8 @@
         "opened_at": "2025-12-08T14:42:03Z",
         "closed_at": "2025-12-08T14:46:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100776461",
@@ -2054,7 +2212,8 @@
         "opened_at": "2025-12-08T15:27:34Z",
         "closed_at": "2025-12-08T15:42:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100776284",
@@ -2066,7 +2225,8 @@
         "opened_at": "2025-12-08T15:24:29Z",
         "closed_at": "2025-12-08T15:42:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100774075",
@@ -2078,7 +2238,8 @@
         "opened_at": "2025-12-08T14:46:40Z",
         "closed_at": "2025-12-08T15:53:34Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100776866",
@@ -2090,7 +2251,8 @@
         "opened_at": "2025-12-08T15:42:01Z",
         "closed_at": "2025-12-08T16:22:19Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100776869",
@@ -2102,7 +2264,8 @@
         "opened_at": "2025-12-08T15:42:03Z",
         "closed_at": "2025-12-08T17:18:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100792766",
@@ -2114,7 +2277,8 @@
         "opened_at": "2025-12-09T13:52:55Z",
         "closed_at": "2025-12-09T14:00:20Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100793866",
@@ -2126,7 +2290,8 @@
         "opened_at": "2025-12-09T14:32:46Z",
         "closed_at": "2025-12-09T14:34:26Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100794095",
@@ -2138,7 +2303,8 @@
         "opened_at": "2025-12-09T14:34:26Z",
         "closed_at": "2025-12-09T14:44:59Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100795962",
@@ -2150,7 +2316,8 @@
         "opened_at": "2025-12-09T15:15:31Z",
         "closed_at": "2025-12-09T15:50:52Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100797155",
@@ -2162,7 +2329,8 @@
         "opened_at": "2025-12-09T15:50:52Z",
         "closed_at": "2025-12-09T16:36:22Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100798767",
@@ -2174,7 +2342,8 @@
         "opened_at": "2025-12-09T16:36:23Z",
         "closed_at": "2025-12-09T16:36:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100815346",
@@ -2186,7 +2355,8 @@
         "opened_at": "2025-12-10T15:00:00Z",
         "closed_at": "2025-12-10T19:00:29Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100821150",
@@ -2198,7 +2368,8 @@
         "opened_at": "2025-12-10T19:00:29Z",
         "closed_at": "2025-12-10T20:08:20Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100831448",
@@ -2210,7 +2381,8 @@
         "opened_at": "2025-12-10T21:00:00Z",
         "closed_at": "2025-12-11T03:02:56Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100818704",
@@ -2222,7 +2394,8 @@
         "opened_at": "2025-12-10T17:00:00Z",
         "closed_at": "2025-12-11T03:45:55Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100835665",
@@ -2234,7 +2407,8 @@
         "opened_at": "2025-12-11T07:00:00Z",
         "closed_at": "2025-12-11T07:22:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100838211",
@@ -2246,7 +2420,8 @@
         "opened_at": "2025-12-11T09:00:00Z",
         "closed_at": "2025-12-11T10:22:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100840278",
@@ -2258,7 +2433,8 @@
         "opened_at": "2025-12-11T11:00:00Z",
         "closed_at": "2025-12-11T11:01:36Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100839876",
@@ -2270,7 +2446,8 @@
         "opened_at": "2025-12-11T10:22:01Z",
         "closed_at": "2025-12-11T11:04:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100836772",
@@ -2282,7 +2459,8 @@
         "opened_at": "2025-12-11T08:00:00Z",
         "closed_at": "2025-12-11T11:05:22Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100840294",
@@ -2294,7 +2472,8 @@
         "opened_at": "2025-12-11T11:01:36Z",
         "closed_at": "2025-12-11T11:12:41Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100847510",
@@ -2306,7 +2485,8 @@
         "opened_at": "2025-12-11T15:00:00Z",
         "closed_at": "2025-12-11T15:48:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100843816",
@@ -2318,7 +2498,8 @@
         "opened_at": "2025-12-11T14:00:00Z",
         "closed_at": "2025-12-11T15:51:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100851613",
@@ -2330,7 +2511,8 @@
         "opened_at": "2025-12-11T16:00:00Z",
         "closed_at": "2025-12-11T16:00:09Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100851612",
@@ -2342,7 +2524,8 @@
         "opened_at": "2025-12-11T16:00:00Z",
         "closed_at": "2025-12-11T16:00:10Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100851643",
@@ -2354,7 +2537,8 @@
         "opened_at": "2025-12-11T16:00:10Z",
         "closed_at": "2025-12-11T16:11:50Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100851645",
@@ -2366,7 +2550,8 @@
         "opened_at": "2025-12-11T16:00:10Z",
         "closed_at": "2025-12-11T16:13:02Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100854028",
@@ -2378,7 +2563,8 @@
         "opened_at": "2025-12-11T17:00:00Z",
         "closed_at": "2025-12-11T17:03:17Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100854029",
@@ -2390,7 +2576,8 @@
         "opened_at": "2025-12-11T17:00:00Z",
         "closed_at": "2025-12-11T17:09:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100887638",
@@ -2402,7 +2589,8 @@
         "opened_at": "2025-12-12T17:00:00Z",
         "closed_at": "2025-12-12T17:18:36Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100900309",
@@ -2414,7 +2602,8 @@
         "opened_at": "2025-12-15T06:00:00Z",
         "closed_at": "2025-12-15T06:05:20Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100888366",
@@ -2426,7 +2615,8 @@
         "opened_at": "2025-12-12T17:18:36Z",
         "closed_at": "2025-12-15T08:53:24Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100944224",
@@ -2438,7 +2628,8 @@
         "opened_at": "2025-12-17T07:00:00Z",
         "closed_at": "2025-12-17T07:14:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100945325",
@@ -2450,7 +2641,8 @@
         "opened_at": "2025-12-17T08:00:00Z",
         "closed_at": "2025-12-17T08:00:52Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100945323",
@@ -2462,7 +2654,8 @@
         "opened_at": "2025-12-17T08:00:00Z",
         "closed_at": "2025-12-17T08:01:13Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100945324",
@@ -2474,7 +2667,8 @@
         "opened_at": "2025-12-17T08:00:00Z",
         "closed_at": "2025-12-17T08:29:43Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100945359",
@@ -2486,7 +2680,8 @@
         "opened_at": "2025-12-17T08:00:52Z",
         "closed_at": "2025-12-17T09:40:37Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100945366",
@@ -2498,7 +2693,8 @@
         "opened_at": "2025-12-17T08:01:13Z",
         "closed_at": "2025-12-17T10:00:46Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100946375",
@@ -2510,7 +2706,8 @@
         "opened_at": "2025-12-17T09:00:00Z",
         "closed_at": "2025-12-17T10:44:54Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100946376",
@@ -2522,7 +2719,8 @@
         "opened_at": "2025-12-17T09:00:00Z",
         "closed_at": "2025-12-17T13:00:04Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100949560",
@@ -2534,7 +2732,8 @@
         "opened_at": "2025-12-17T13:00:00Z",
         "closed_at": "2025-12-17T13:41:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100951405",
@@ -2546,7 +2745,8 @@
         "opened_at": "2025-12-17T14:00:00Z",
         "closed_at": "2025-12-17T14:02:50Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100953793",
@@ -2558,7 +2758,8 @@
         "opened_at": "2025-12-17T15:00:00Z",
         "closed_at": "2025-12-17T15:00:17Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100953808",
@@ -2570,7 +2771,8 @@
         "opened_at": "2025-12-17T15:00:17Z",
         "closed_at": "2025-12-17T15:01:41Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100953796",
@@ -2582,7 +2784,8 @@
         "opened_at": "2025-12-17T15:00:01Z",
         "closed_at": "2025-12-17T15:19:34Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100951745",
@@ -2594,7 +2797,8 @@
         "opened_at": "2025-12-17T14:11:11Z",
         "closed_at": "2025-12-17T15:39:40Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100956345",
@@ -2606,7 +2810,8 @@
         "opened_at": "2025-12-17T16:00:00Z",
         "closed_at": "2025-12-17T16:01:27Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100956398",
@@ -2618,7 +2823,8 @@
         "opened_at": "2025-12-17T16:01:27Z",
         "closed_at": "2025-12-17T16:03:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100956346",
@@ -2630,7 +2836,8 @@
         "opened_at": "2025-12-17T16:00:00Z",
         "closed_at": "2025-12-17T16:06:26Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100956347",
@@ -2642,7 +2849,8 @@
         "opened_at": "2025-12-17T16:00:00Z",
         "closed_at": "2025-12-17T16:08:20Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100958860",
@@ -2654,7 +2862,8 @@
         "opened_at": "2025-12-17T17:00:00Z",
         "closed_at": "2025-12-17T17:06:18Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100958861",
@@ -2666,7 +2875,8 @@
         "opened_at": "2025-12-17T17:00:00Z",
         "closed_at": "2025-12-17T18:00:01Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100958859",
@@ -2678,7 +2888,8 @@
         "opened_at": "2025-12-17T17:00:00Z",
         "closed_at": "2025-12-17T19:20:33Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100969121",
@@ -2690,7 +2901,8 @@
         "opened_at": "2025-12-18T08:00:00Z",
         "closed_at": "2025-12-18T08:09:41Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100969832",
@@ -2702,7 +2914,8 @@
         "opened_at": "2025-12-18T09:00:00Z",
         "closed_at": "2025-12-18T09:25:30Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100970071",
@@ -2714,7 +2927,8 @@
         "opened_at": "2025-12-18T09:25:30Z",
         "closed_at": "2025-12-18T09:55:34Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100971555",
@@ -2726,7 +2940,8 @@
         "opened_at": "2025-12-18T12:00:00Z",
         "closed_at": "2025-12-18T12:00:15Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100971570",
@@ -2738,7 +2953,8 @@
         "opened_at": "2025-12-18T12:00:16Z",
         "closed_at": "2025-12-18T12:00:19Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100971923",
@@ -2750,7 +2966,8 @@
         "opened_at": "2025-12-18T12:30:19Z",
         "closed_at": "2025-12-18T12:34:31Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100991261",
@@ -2762,7 +2979,8 @@
         "opened_at": "2025-12-19T07:00:00Z",
         "closed_at": "2025-12-19T07:44:21Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100991864",
@@ -2774,7 +2992,8 @@
         "opened_at": "2025-12-19T07:44:21Z",
         "closed_at": "2025-12-19T08:07:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "100993109",
@@ -2786,7 +3005,8 @@
         "opened_at": "2025-12-19T09:00:00Z",
         "closed_at": "2025-12-19T13:20:11Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "101003378",
@@ -2798,7 +3018,21 @@
         "opened_at": "2025-12-19T16:00:00Z",
         "closed_at": "2025-12-19T16:04:36Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
+      },
+      {
+        "ticket": "163664626",
+        "symbol": "GBPCAD",
+        "volume": 0.01,
+        "profit": 0.19,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": "[sl 1.84223]",
+        "opened_at": "2025-12-19T16:00:00Z",
+        "closed_at": "2025-12-19T16:04:36Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "101003632",
@@ -2810,7 +3044,21 @@
         "opened_at": "2025-12-19T16:04:37Z",
         "closed_at": "2025-12-19T16:06:05Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
+      },
+      {
+        "ticket": "163664714",
+        "symbol": "GBPCAD",
+        "volume": 0.01,
+        "profit": 0.14,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": "[sl 1.84280]",
+        "opened_at": "2025-12-19T16:04:37Z",
+        "closed_at": "2025-12-19T16:06:05Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "101005875",
@@ -2822,7 +3070,21 @@
         "opened_at": "2025-12-19T17:00:00Z",
         "closed_at": "2025-12-19T17:28:34Z",
         "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
+      },
+      {
+        "ticket": "163668402",
+        "symbol": "GBPCAD",
+        "volume": 0.01,
+        "profit": 0.17,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": "[sl 1.84390]",
+        "opened_at": "2025-12-19T17:00:00Z",
+        "closed_at": "2025-12-19T17:28:34Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": null
       },
       {
         "ticket": "101007684",
@@ -2834,105 +3096,34 @@
         "opened_at": "2025-12-19T17:28:34Z",
         "closed_at": "2025-12-19T19:01:45Z",
         "tp_label": null,
-        "sl_label": null
-      },
-      {
-        "ticket": "163671132",
-        "symbol": "GBPCAD",
-        "volume": 0.01,
-        "profit": 0.17,
-        "order_type": "DEAL_TYPE_SELL",
-        "comment": "[sl 1.84441]",
-        "opened_at": "2025-12-19T19:01:45Z",
-        "closed_at": "2025-12-19T19:01:45Z",
-        "tp_label": null,
-        "sl_label": null
+        "sl_label": null,
+        "exit_reason": null
       }
     ],
     "snapshots": [
       {
-        "timestamp": "2025-12-19T20:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
+        "timestamp": "2025-12-19T16:00:00Z",
+        "balance": 173.23,
+        "equity": 172.99,
+        "floating": -0.24
       },
       {
-        "timestamp": "2025-12-19T21:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
+        "timestamp": "2025-12-19T17:00:00Z",
+        "balance": 173.56,
+        "equity": 173.36,
+        "floating": -0.2
       },
       {
-        "timestamp": "2025-12-21T23:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
+        "timestamp": "2025-12-19T18:00:00Z",
+        "balance": 173.73,
+        "equity": 173.12,
+        "floating": -0.61
       },
       {
-        "timestamp": "2025-12-22T00:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T01:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T02:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T03:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T04:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T05:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T06:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T07:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T08:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T09:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
-      },
-      {
-        "timestamp": "2025-12-22T10:00:00Z",
-        "balance": 173.9,
-        "equity": 173.9,
-        "floating": 0.0
+        "timestamp": "2025-12-19T19:00:00Z",
+        "balance": 173.73,
+        "equity": 174.0,
+        "floating": 0.27
       }
     ]
   }
