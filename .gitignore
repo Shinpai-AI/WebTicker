@@ -1,41 +1,18 @@
-# === SHARROW WEBTICKER - GITIGNORE ===
-# Nur JSON/HTML/Marker werden gepusht - alles andere bleibt lokal!
+# Track nur den aktuellen Projektstand, alles andere bleibt draußen.
+# Standard: alles ignorieren ...
+/*
 
-# === SENSITIVE FILES (NEVER PUSH!) ===
-*.log
-*state.log
-*-config.json
-config.json
-*.key
-*.pem
-.env
+# ... außer die Dateien, die in diesem Repository liegen sollen.
+!.gitignore
+!README.md
+!RUN-WebTicker.sh
+!TKB-WebTicker.html
+!TKB-WebTicker-initial.py
+!TKB-WebTicker.json
+!TKB-WebTicker.py
+!TKB-WebTicker-welldone.txt
+!webticker_lib.py
 
-# === SOURCE CODE (stays local) ===
-*.py
-*.sh
-*.bat
-
-# === SYSTEM FILES ===
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-
-# === IDE FILES ===
-.vscode/
-.idea/
-*.sublime-*
-
-# === TEMP FILES ===
-*.tmp
-*.temp
-*.bak
-__pycache__/
-*.pyc
-
-# === ONLY THESE ARE PUSHED ===
-# TKB-WebTicker.json
-# TKB-WebTicker.html
-# TKB-WebTicker-welldone.txt
-# README.md
+# History-Verzeichnis komplett versionieren.
+!History/
+!History/**
