@@ -82,6 +82,7 @@ def normalize_trade(entry: Dict[str, Any]) -> Dict[str, Any]:
         "closed_at": closed_at,
         "tp_label": entry.get("tp_label"),
         "sl_label": entry.get("sl_label"),
+        "exit_reason": entry.get("exit_reason"),
     }
 
 
@@ -107,6 +108,7 @@ def serialize_trade(trade: Dict[str, Any]) -> Dict[str, Any]:
         "closed_at": isoformat(trade["closed_at"]) if isinstance(trade.get("closed_at"), datetime) else trade.get("closed_at"),
         "tp_label": trade.get("tp_label"),
         "sl_label": trade.get("sl_label"),
+        "exit_reason": trade.get("exit_reason"),
     }
 
 

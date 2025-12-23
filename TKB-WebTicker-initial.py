@@ -21,6 +21,7 @@ from webticker_lib import (
     HISTORY_VERSION,
     isoformat,
     load_state_entries,
+    parse_iso_datetime,
     normalize_snapshot,
     normalize_trade,
     serialize_snapshot,
@@ -126,25 +127,33 @@ def parse_statement_html(path: Path) -> List[Dict[str, Any]]:
         order_type = cells[3]
         comment = cells[4]
         volume = _parse_float(cells[5])
+        open_price = _parse_float(cells[6])
+        sl_price = _parse_float(cells[7])
+        tp_price = _parse_float(cells[8])
         close_time = cells[9]
+        close_price = _parse_float(cells[10])
         profit = _parse_float(cells[-1])
         try:
             opened_at = datetime.strptime(open_time, "%Y.%m.%d %H:%M:%S").replace(tzinfo=timezone.utc)
             closed_at = datetime.strptime(close_time, "%Y.%m.%d %H:%M:%S").replace(tzinfo=timezone.utc)
         except ValueError:
             continue
-        trades.append(
-            {
-                "ticket": ticket,
-                "symbol": symbol,
-                "volume": volume,
-                "profit": profit,
-                "order_type": order_type,
-                "comment": comment,
-                "opened_at": opened_at,
-                "closed_at": closed_at,
-            }
-        )
+        record = {
+            "ticket": ticket,
+            "symbol": symbol,
+            "volume": volume,
+            "profit": profit,
+            "order_type": order_type,
+            "comment": comment,
+            "opened_at": opened_at,
+            "closed_at": closed_at,
+            "open_price": open_price,
+            "sl_price": sl_price,
+            "tp_price": tp_price,
+            "close_price": close_price,
+        }
+        _infer_exit_labels(record)
+        trades.append(record)
     return trades
 
 
@@ -154,6 +163,26 @@ def _parse_float(value: str) -> float:
         return float(cleaned)
     except ValueError:
         return 0.0
+
+
+def _approx_equal(a: float, b: float, *, epsilon: float = 1e-5) -> bool:
+    if a is None or b is None:
+        return False
+    return abs(a - b) <= epsilon
+
+
+def _infer_exit_labels(trade: Dict[str, Any]) -> None:
+    close_price = trade.get("close_price")
+    if close_price is None:
+        return
+    tp_price = trade.get("tp_price")
+    sl_price = trade.get("sl_price")
+    epsilon = max(abs(close_price) * 1e-4, 1e-5)
+    if tp_price and _approx_equal(close_price, tp_price, epsilon=epsilon):
+        trade["tp_label"] = "statement_tp"
+        return
+    if sl_price and _approx_equal(close_price, sl_price, epsilon=epsilon):
+        trade["sl_label"] = "statement_sl"
 
 
 def merge_trades(*trade_lists: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -174,6 +203,9 @@ def merge_trades(*trade_lists: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
                 "comment": trade.get("comment"),
                 "opened_at": trade.get("opened_at"),
                 "closed_at": trade.get("closed_at"),
+                "tp_label": trade.get("tp_label"),
+                "sl_label": trade.get("sl_label"),
+                "exit_reason": trade.get("exit_reason"),
             }
     normalized = []
     for entry in merged.values():

@@ -138,6 +138,7 @@ def _materialize_trades(history: Dict[str, Any]) -> List[Dict[str, Any]]:
                 "closed_at": closed_at,
                 "tp_label": entry.get("tp_label"),
                 "sl_label": entry.get("sl_label"),
+                "exit_reason": entry.get("exit_reason"),
             }
         )
     trades.sort(key=lambda trade: trade["closed_at"])
@@ -189,17 +190,55 @@ def _canonical_side(order_type: str | None) -> str:
     return side
 
 
-def _build_exit_label(trade: Dict[str, Any]) -> str:
+EXIT_LABELS = {
+    "tp": "Exit: TP",
+    "sl": "Exit: SL",
+    "manual": "Exit Manual",
+}
+_DEFAULT_EXIT_TYPE = "manual"
+_TP_REASON_HINTS = ("deal_reason_tp", "tp_hit", "takeprofit", "take profit", "target_tp")
+_SL_REASON_HINTS = ("deal_reason_sl", "sl_hit", "stoploss", "stop loss", "target_sl")
+_TP_COMMENT_HINTS = ("[tp", " tp", "tp ", "tp:", "tp-", "tp hit", "take profit")
+_SL_COMMENT_HINTS = ("[sl", " sl", "sl ", "sl:", "sl-", "sl hit", "stop loss")
+
+
+def _normalize_text(value: Any) -> str:
+    return str(value).strip().lower()
+
+
+def _contains_hint(value: Any, hints: Tuple[str, ...]) -> bool:
+    if not value:
+        return False
+    text = _normalize_text(value)
+    return any(hint in text for hint in hints)
+
+
+def determine_exit_type(trade: Dict[str, Any] | None) -> str:
+    if not trade:
+        return _DEFAULT_EXIT_TYPE
     if trade.get("tp_label"):
-        return "TP Hit"
+        return "tp"
+    if _contains_hint(trade.get("exit_reason"), _TP_REASON_HINTS):
+        return "tp"
+    if _contains_hint(trade.get("comment"), _TP_COMMENT_HINTS):
+        return "tp"
     if trade.get("sl_label"):
-        return "SL Hit"
-    return "Exit"
+        return "sl"
+    if _contains_hint(trade.get("exit_reason"), _SL_REASON_HINTS):
+        return "sl"
+    if _contains_hint(trade.get("comment"), _SL_COMMENT_HINTS):
+        return "sl"
+    return _DEFAULT_EXIT_TYPE
+
+
+def _build_exit_label(exit_type: str) -> str:
+    return EXIT_LABELS.get(exit_type, EXIT_LABELS[_DEFAULT_EXIT_TYPE])
 
 
 def summarize_single_trade(trade: Dict[str, Any] | None, *, include_comment: bool = False) -> Dict[str, Any] | None:
     if not trade:
         return None
+    exit_type = determine_exit_type(trade)
     summary = {
         "ticket": trade.get("ticket"),
         "symbol": trade.get("symbol"),
@@ -207,7 +246,8 @@ def summarize_single_trade(trade: Dict[str, Any] | None, *, include_comment: boo
         "volume": round(trade.get("volume", 0.0), 2),
         "order_type": _canonical_side(trade.get("order_type")),
         "closed_at": isoformat(trade.get("closed_at")) if trade.get("closed_at") else None,
-        "exit": _build_exit_label(trade),
+        "exit": _build_exit_label(exit_type),
+        "exit_type": exit_type,
         "comment": trade.get("comment"),
     }
     if not include_comment:
@@ -361,13 +401,17 @@ def render_html(payload: Dict[str, Any]) -> str:
             + "</tbody></table>"
         )
 
-    recent_cards = []
+    def chunked(items: List[str], size: int) -> List[List[str]]:
+        return [items[idx : idx + size] for idx in range(0, len(items), size)]
+
+    recent_cards: List[str] = []
     for trade in recent:
         profit_cls = "pos" if trade.get("profit", 0.0) >= 0 else "neg"
         side = trade.get("order_type") or ""
         side_cls = "buy" if side == "BUY" else "sell" if side == "SELL" else ""
         volume = trade.get("volume", 0.0)
-        exit_label = trade.get("exit") or ""
+        exit_label = trade.get("exit") or EXIT_LABELS[_DEFAULT_EXIT_TYPE]
+        exit_type = trade.get("exit_type") or _DEFAULT_EXIT_TYPE
         side_markup = ""
         if side:
             side_markup = f" · <span class=\"side {side_cls}\">{html_escape(side)}</span>"
@@ -376,12 +420,18 @@ def render_html(payload: Dict[str, Any]) -> str:
             f"<div class='trade-top'>{html_escape(trade.get('symbol',''))}"
             f"{side_markup} · {volume:.2f} Lot</div>"
             f"<div class='trade-profit {profit_cls}'>{fmt_money(trade.get('profit',0.0))}</div>"
-            f"<div class='trade-meta'>{html_escape(exit_label or '–')}</div>"
+            f"<div class='trade-meta exit {exit_type}'>{html_escape(exit_label)}</div>"
             f"<div class='trade-meta'>{html_escape(trade.get('closed_at',''))}</div>"
             "</div>"
         )
-    if not recent_cards:
-        recent_cards.append("<p class='muted'>Keine Trades verfügbar.</p>")
+    if recent_cards:
+        recent_rows = [
+            "<div class='trade-row'>" + "".join(row_cards) + "</div>"
+            for row_cards in chunked(recent_cards, 5)
+        ]
+        recent_markup = "".join(recent_rows)
+    else:
+        recent_markup = "<p class='muted'>Keine Trades verfügbar.</p>"
 
     def render_trade_hint(trade: Dict[str, Any] | None, label: str) -> str:
         if not trade:
@@ -449,7 +499,11 @@ def render_html(payload: Dict[str, Any]) -> str:
     th {{ background: #1b2340; font-weight: 500; }}
     tr:nth-child(even) td {{ background: #151c32; }}
     .num {{ text-align: right; font-variant-numeric: tabular-nums; }}
-    .trade-list {{ display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; }}
+    .trade-list {{ display: flex; flex-direction: column; gap: 14px; }}
+    .trade-row {{ display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }}
+    @media (max-width: 1500px) {{
+      .trade-row {{ grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }}
+    }}
     .trade-card {{ background: #11162a; border-radius: 12px; padding: 14px; }}
     .trade-top {{ font-weight: 600; margin-bottom: 4px; }}
     .side {{ font-weight: 600; }}
@@ -458,6 +512,10 @@ def render_html(payload: Dict[str, Any]) -> str:
     .trade-profit.pos {{ color: #4ade80; }}
     .trade-profit.neg {{ color: #f87171; }}
     .trade-meta {{ font-size: 0.8rem; color: #8d95b6; }}
+    .trade-meta.exit {{ font-weight: 600; }}
+    .trade-meta.exit.tp {{ color: #4ade80; }}
+    .trade-meta.exit.sl {{ color: #f87171; }}
+    .trade-meta.exit.manual {{ color: #8d95b6; }}
     .muted {{ color: #8d95b6; font-size: 0.9rem; }}
   </style>
 </head>
@@ -475,10 +533,10 @@ def render_html(payload: Dict[str, Any]) -> str:
     <h2>Performance-Fenster</h2>
     <div class="stat-grid">{''.join(window_cards)}</div>
   </div>
-  <div class="section">
-    <h2>Letzte Trades</h2>
-    <div class="trade-list">{''.join(recent_cards)}</div>
-  </div>
+    <div class="section">
+      <h2>Letzte Trades</h2>
+      <div class="trade-list">{recent_markup}</div>
+    </div>
   <div class="section">
     <h2>Top Performer</h2>
     {render_symbol_table(top_symbols)}
