@@ -1,60 +1,57 @@
 {
   "meta": {
     "bot": "Goldjunge",
-    "generated_at": "2025-12-23T02:14:53Z",
-    "snapshot_at": "2025-12-23T02:00:00Z",
-    "trade_active": false,
-    "status": "paused",
-    "pause_message": "Keine Trades wegen Markt-Turbulenzen. Wir sind bald wieder zurück!",
-    "pause_since": "2025-12-23T02:14:53Z"
+    "generated_at": "2026-01-07T10:05:07Z",
+    "snapshot_at": "2026-01-07T10:00:00Z",
+    "trade_active": true
   },
   "account": {
-    "balance": 173.9,
-    "equity": 173.9,
+    "balance": 172.91,
+    "equity": 172.91,
     "floating": 0.0,
-    "snapshot_at": "2025-12-23T02:00:00Z"
+    "snapshot_at": "2026-01-07T10:00:00Z"
   },
   "overall": {
-    "profit": -64.93,
-    "trades": 211,
+    "profit": -65.92,
+    "trades": 212,
     "wins": 113,
-    "losses": 93,
-    "win_rate": 53.55
+    "losses": 94,
+    "win_rate": 53.3
   },
   "windows": {
     "7d": {
-      "profit": -4.78,
-      "trades": 34,
-      "wins": 23,
-      "losses": 11,
-      "win_rate": 67.65,
+      "profit": -0.99,
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
       "best_trade": {
-        "ticket": "100971555",
-        "symbol": "GBPCAD",
-        "profit": 0.87,
+        "ticket": "164160729",
+        "symbol": "EURCHF",
+        "profit": -0.99,
         "volume": 0.01,
         "order_type": "BUY",
-        "closed_at": "2025-12-18T12:00:15Z",
-        "exit": "Exit: TP",
-        "exit_type": "tp"
+        "closed_at": "2026-01-07T08:41:10Z",
+        "exit": "Exit: SL",
+        "exit_type": "sl"
       },
       "worst_trade": {
-        "ticket": "100993109",
-        "symbol": "NZDUSD",
-        "profit": -2.45,
-        "volume": 0.02,
+        "ticket": "164160729",
+        "symbol": "EURCHF",
+        "profit": -0.99,
+        "volume": 0.01,
         "order_type": "BUY",
-        "closed_at": "2025-12-19T13:20:11Z",
+        "closed_at": "2026-01-07T08:41:10Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
     },
     "30d": {
-      "profit": -35.86,
-      "trades": 101,
-      "wins": 55,
-      "losses": 43,
-      "win_rate": 54.46,
+      "profit": -18.13,
+      "trades": 72,
+      "wins": 37,
+      "losses": 33,
+      "win_rate": 51.39,
       "best_trade": {
         "ticket": "100776869",
         "symbol": "NZDCAD",
@@ -77,11 +74,11 @@
       }
     },
     "365d": {
-      "profit": -64.93,
-      "trades": 211,
+      "profit": -65.92,
+      "trades": 212,
       "wins": 113,
-      "losses": 93,
-      "win_rate": 53.55,
+      "losses": 94,
+      "win_rate": 53.3,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -153,7 +150,7 @@
       "trades": 11,
       "wins": 5,
       "losses": 5,
-      "rank": 19
+      "rank": 20
     },
     {
       "symbol": "USDJPY",
@@ -161,7 +158,7 @@
       "trades": 11,
       "wins": 3,
       "losses": 6,
-      "rank": 20
+      "rank": 21
     },
     {
       "symbol": "AUDJPY",
@@ -169,7 +166,7 @@
       "trades": 9,
       "wins": 4,
       "losses": 4,
-      "rank": 21
+      "rank": 22
     },
     {
       "symbol": "USDCHF",
@@ -177,7 +174,7 @@
       "trades": 12,
       "wins": 5,
       "losses": 7,
-      "rank": 22
+      "rank": 23
     },
     {
       "symbol": "GBPUSD",
@@ -185,10 +182,21 @@
       "trades": 20,
       "wins": 10,
       "losses": 10,
-      "rank": 23
+      "rank": 24
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164160729",
+      "symbol": "EURCHF",
+      "profit": -0.99,
+      "volume": 0.01,
+      "order_type": "BUY",
+      "closed_at": "2026-01-07T08:41:10Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.93063]"
+    },
     {
       "ticket": "101007684",
       "symbol": "GBPCAD",
@@ -287,34 +295,13 @@
       "exit": "Exit: TP",
       "exit_type": "tp",
       "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100971555",
-      "symbol": "GBPCAD",
-      "profit": 0.87,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-18T12:00:15Z",
-      "exit": "Exit: TP",
-      "exit_type": "tp",
-      "comment": "Sharrow v6.0 BUY (H1)"
     }
   ],
   "daily_breakdown": [
     {
-      "date": "2025-12-17",
-      "profit": -1.6600000000000001,
-      "trades": 21
-    },
-    {
-      "date": "2025-12-18",
-      "profit": 0.7799999999999998,
-      "trades": 6
-    },
-    {
-      "date": "2025-12-19",
-      "profit": -3.9000000000000004,
-      "trades": 7
+      "date": "2026-01-07",
+      "profit": -0.99,
+      "trades": 1
     }
   ],
   "history": {
@@ -3062,6 +3049,19 @@
         "tp_label": null,
         "sl_label": "statement_sl",
         "exit_reason": null
+      },
+      {
+        "ticket": "164160729",
+        "symbol": "EURCHF",
+        "volume": 0.01,
+        "profit": -0.99,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.93063]",
+        "opened_at": "2026-01-07T08:41:10Z",
+        "closed_at": "2026-01-07T08:41:10Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
       }
     ],
     "snapshots": [
@@ -3069,6 +3069,1296 @@
         "timestamp": "2025-12-23T02:00:00Z",
         "balance": 173.9,
         "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-23T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-24T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-25T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-26T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-28T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-29T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-30T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2025-12-31T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-01T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-02T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-04T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-05T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T07:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T09:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T10:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T11:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T12:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T13:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T14:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T15:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T16:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T17:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T18:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T19:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T20:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T21:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-06T23:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T00:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T01:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T02:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T03:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T04:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T05:00:00Z",
+        "balance": 173.9,
+        "equity": 173.9,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T06:00:00Z",
+        "balance": 173.9,
+        "equity": 173.68,
+        "floating": -0.22
+      },
+      {
+        "timestamp": "2026-01-07T07:00:00Z",
+        "balance": 173.9,
+        "equity": 174.0,
+        "floating": 0.1
+      },
+      {
+        "timestamp": "2026-01-07T08:00:00Z",
+        "balance": 173.9,
+        "equity": 173.04,
+        "floating": -0.86
+      },
+      {
+        "timestamp": "2026-01-07T09:00:00Z",
+        "balance": 172.91,
+        "equity": 172.91,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-07T10:00:00Z",
+        "balance": 172.91,
+        "equity": 172.91,
         "floating": 0.0
       }
     ]
