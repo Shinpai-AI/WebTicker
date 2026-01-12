@@ -1,84 +1,84 @@
 {
   "meta": {
-    "bot": "Goldjunge",
-    "generated_at": "2026-01-07T10:05:07Z",
-    "snapshot_at": "2026-01-07T10:00:00Z",
+    "bot": "Goldjunge (Ray)",
+    "generated_at": "2026-01-12T22:00:01Z",
+    "snapshot_at": "2026-01-12T21:00:00Z",
     "trade_active": true
   },
   "account": {
-    "balance": 172.91,
-    "equity": 172.91,
-    "floating": 0.0,
-    "snapshot_at": "2026-01-07T10:00:00Z"
+    "balance": 170.98,
+    "equity": 170.82,
+    "floating": -0.16,
+    "snapshot_at": "2026-01-12T21:00:00Z"
   },
   "overall": {
-    "profit": -65.92,
-    "trades": 212,
-    "wins": 113,
-    "losses": 94,
-    "win_rate": 53.3
+    "profit": -67.58,
+    "trades": 219,
+    "wins": 116,
+    "losses": 95,
+    "win_rate": 52.97
   },
   "windows": {
     "7d": {
-      "profit": -0.99,
-      "trades": 1,
-      "wins": 0,
-      "losses": 1,
-      "win_rate": 0.0,
+      "profit": -2.65,
+      "trades": 8,
+      "wins": 3,
+      "losses": 2,
+      "win_rate": 37.5,
       "best_trade": {
-        "ticket": "164160729",
-        "symbol": "EURCHF",
-        "profit": -0.99,
-        "volume": 0.01,
+        "ticket": "164336774",
+        "symbol": "AUDUSD",
+        "profit": 0.29,
+        "volume": 0.02,
         "order_type": "BUY",
-        "closed_at": "2026-01-07T08:41:10Z",
+        "closed_at": "2026-01-12T14:04:57Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       },
       "worst_trade": {
-        "ticket": "164160729",
-        "symbol": "EURCHF",
-        "profit": -0.99,
-        "volume": 0.01,
+        "ticket": "164333205",
+        "symbol": "AUDUSD",
+        "profit": -2.51,
+        "volume": 0.02,
         "order_type": "BUY",
-        "closed_at": "2026-01-07T08:41:10Z",
+        "closed_at": "2026-01-12T13:16:29Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
     },
     "30d": {
-      "profit": -18.13,
-      "trades": 72,
-      "wins": 37,
-      "losses": 33,
-      "win_rate": 51.39,
+      "profit": -7.5,
+      "trades": 44,
+      "wins": 27,
+      "losses": 14,
+      "win_rate": 61.36,
       "best_trade": {
-        "ticket": "100776869",
-        "symbol": "NZDCAD",
-        "profit": 2.88,
-        "volume": 0.02,
+        "ticket": "100971555",
+        "symbol": "GBPCAD",
+        "profit": 0.87,
+        "volume": 0.01,
         "order_type": "BUY",
-        "closed_at": "2025-12-08T17:18:37Z",
+        "closed_at": "2025-12-18T12:00:15Z",
         "exit": "Exit: TP",
         "exit_type": "tp"
       },
       "worst_trade": {
-        "ticket": "100831448",
-        "symbol": "AUDCHF",
-        "profit": -6.65,
+        "ticket": "164333205",
+        "symbol": "AUDUSD",
+        "profit": -2.51,
         "volume": 0.02,
         "order_type": "BUY",
-        "closed_at": "2025-12-11T03:02:56Z",
+        "closed_at": "2026-01-12T13:16:29Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
     },
     "365d": {
-      "profit": -65.92,
-      "trades": 212,
-      "wins": 113,
-      "losses": 94,
-      "win_rate": 53.3,
+      "profit": -67.58,
+      "trades": 219,
+      "wins": 116,
+      "losses": 95,
+      "win_rate": 52.97,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -111,19 +111,19 @@
       "rank": 1
     },
     {
-      "symbol": "AUDUSD",
-      "profit": 3.43,
-      "trades": 13,
-      "wins": 7,
-      "losses": 6,
-      "rank": 2
-    },
-    {
       "symbol": "CHFJPY",
       "profit": 3.3400000000000007,
       "trades": 18,
       "wins": 9,
       "losses": 9,
+      "rank": 2
+    },
+    {
+      "symbol": "AUDUSD",
+      "profit": 1.7700000000000005,
+      "trades": 17,
+      "wins": 10,
+      "losses": 7,
       "rank": 3
     },
     {
@@ -150,7 +150,7 @@
       "trades": 11,
       "wins": 5,
       "losses": 5,
-      "rank": 20
+      "rank": 21
     },
     {
       "symbol": "USDJPY",
@@ -158,7 +158,7 @@
       "trades": 11,
       "wins": 3,
       "losses": 6,
-      "rank": 21
+      "rank": 22
     },
     {
       "symbol": "AUDJPY",
@@ -166,7 +166,7 @@
       "trades": 9,
       "wins": 4,
       "losses": 4,
-      "rank": 22
+      "rank": 23
     },
     {
       "symbol": "USDCHF",
@@ -174,7 +174,7 @@
       "trades": 12,
       "wins": 5,
       "losses": 7,
-      "rank": 23
+      "rank": 24
     },
     {
       "symbol": "GBPUSD",
@@ -182,10 +182,87 @@
       "trades": 20,
       "wins": 10,
       "losses": 10,
-      "rank": 24
+      "rank": 25
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164359889",
+      "symbol": "AUDUSD",
+      "profit": 0.29,
+      "volume": 0.02,
+      "order_type": "BUY",
+      "closed_at": "2026-01-12T16:52:39Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.67172]"
+    },
+    {
+      "ticket": "164337455",
+      "symbol": "AUDUSD",
+      "profit": 0.27,
+      "volume": 0.02,
+      "order_type": "BUY",
+      "closed_at": "2026-01-12T14:13:03Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.67091]"
+    },
+    {
+      "ticket": "164336774",
+      "symbol": "AUDUSD",
+      "profit": 0.29,
+      "volume": 0.02,
+      "order_type": "BUY",
+      "closed_at": "2026-01-12T14:04:57Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.67129]"
+    },
+    {
+      "ticket": "164333205",
+      "symbol": "AUDUSD",
+      "profit": -2.51,
+      "volume": 0.02,
+      "order_type": "BUY",
+      "closed_at": "2026-01-12T13:16:29Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.67184]"
+    },
+    {
+      "ticket": "164319672",
+      "symbol": "DOGEUSD",
+      "profit": 0.0,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2026-01-12T08:35:36Z",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
+      "comment": null
+    },
+    {
+      "ticket": "164315936",
+      "symbol": "DOGEUSD",
+      "profit": 0.0,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2026-01-12T07:13:30Z",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
+      "comment": null
+    },
+    {
+      "ticket": "164315934",
+      "symbol": "DOGEUSD",
+      "profit": 0.0,
+      "volume": 0.01,
+      "order_type": "SELL",
+      "closed_at": "2026-01-12T07:13:29Z",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
+      "comment": null
+    },
     {
       "ticket": "164160729",
       "symbol": "EURCHF",
@@ -218,83 +295,6 @@
       "exit": "Exit: SL",
       "exit_type": "sl",
       "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "101003632",
-      "symbol": "GBPCAD",
-      "profit": 0.14,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T16:06:05Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "101003378",
-      "symbol": "GBPCAD",
-      "profit": 0.19,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T16:04:36Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100993109",
-      "symbol": "NZDUSD",
-      "profit": -2.45,
-      "volume": 0.02,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T13:20:11Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100991864",
-      "symbol": "NZDUSD",
-      "profit": 0.24,
-      "volume": 0.02,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T08:07:11Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100991261",
-      "symbol": "NZDUSD",
-      "profit": -2.36,
-      "volume": 0.02,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T07:44:21Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100971923",
-      "symbol": "GBPCAD",
-      "profit": 0.32,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-18T12:34:31Z",
-      "exit": "Exit: TP",
-      "exit_type": "tp",
-      "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "100971570",
-      "symbol": "GBPCAD",
-      "profit": 0.28,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-18T12:00:19Z",
-      "exit": "Exit: TP",
-      "exit_type": "tp",
-      "comment": "Sharrow v6.0 BUY (H1)"
     }
   ],
   "daily_breakdown": [
@@ -302,6 +302,11 @@
       "date": "2026-01-07",
       "profit": -0.99,
       "trades": 1
+    },
+    {
+      "date": "2026-01-12",
+      "profit": -1.6599999999999997,
+      "trades": 7
     }
   ],
   "history": {
@@ -3062,6 +3067,97 @@
         "tp_label": null,
         "sl_label": "Hit",
         "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164315934",
+        "symbol": "DOGEUSD",
+        "volume": 0.01,
+        "profit": 0.0,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": null,
+        "opened_at": "2026-01-12T07:12:28Z",
+        "closed_at": "2026-01-12T07:13:29Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": "DEAL_REASON_CLIENT"
+      },
+      {
+        "ticket": "164315936",
+        "symbol": "DOGEUSD",
+        "volume": 0.01,
+        "profit": 0.0,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": null,
+        "opened_at": "2026-01-12T07:13:22Z",
+        "closed_at": "2026-01-12T07:13:30Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": "DEAL_REASON_CLIENT"
+      },
+      {
+        "ticket": "164319672",
+        "symbol": "DOGEUSD",
+        "volume": 0.01,
+        "profit": 0.0,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": null,
+        "opened_at": "2026-01-12T08:35:36Z",
+        "closed_at": "2026-01-12T08:35:36Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": "DEAL_REASON_MOBILE"
+      },
+      {
+        "ticket": "164333205",
+        "symbol": "AUDUSD",
+        "volume": 0.02,
+        "profit": -2.51,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.67184]",
+        "opened_at": "2026-01-12T13:16:29Z",
+        "closed_at": "2026-01-12T13:16:29Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164336774",
+        "symbol": "AUDUSD",
+        "volume": 0.02,
+        "profit": 0.29,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.67129]",
+        "opened_at": "2026-01-12T14:00:00Z",
+        "closed_at": "2026-01-12T14:04:57Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164337455",
+        "symbol": "AUDUSD",
+        "volume": 0.02,
+        "profit": 0.27,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.67091]",
+        "opened_at": "2026-01-12T14:04:57Z",
+        "closed_at": "2026-01-12T14:13:03Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164359889",
+        "symbol": "AUDUSD",
+        "volume": 0.02,
+        "profit": 0.29,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.67172]",
+        "opened_at": "2026-01-12T16:00:00Z",
+        "closed_at": "2026-01-12T16:52:39Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
       }
     ],
     "snapshots": [
@@ -4360,6 +4456,216 @@
         "balance": 172.91,
         "equity": 172.91,
         "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T10:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T11:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T12:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T13:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T14:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T15:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T16:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T17:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T18:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T19:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T20:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-09T21:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-11T23:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T00:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T01:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T02:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T03:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T04:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T05:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T06:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T07:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T08:00:00Z",
+        "balance": 172.64,
+        "equity": 172.64,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T09:00:00Z",
+        "balance": 172.64,
+        "equity": 172.38,
+        "floating": -0.26
+      },
+      {
+        "timestamp": "2026-01-12T10:00:00Z",
+        "balance": 172.64,
+        "equity": 171.9,
+        "floating": -0.74
+      },
+      {
+        "timestamp": "2026-01-12T11:00:00Z",
+        "balance": 172.64,
+        "equity": 171.1,
+        "floating": -1.54
+      },
+      {
+        "timestamp": "2026-01-12T12:00:00Z",
+        "balance": 172.64,
+        "equity": 172.02,
+        "floating": -0.62
+      },
+      {
+        "timestamp": "2026-01-12T13:00:00Z",
+        "balance": 172.64,
+        "equity": 171.43,
+        "floating": -1.21
+      },
+      {
+        "timestamp": "2026-01-12T14:00:00Z",
+        "balance": 170.13,
+        "equity": 169.75,
+        "floating": -0.38
+      },
+      {
+        "timestamp": "2026-01-12T15:00:00Z",
+        "balance": 170.69,
+        "equity": 170.68,
+        "floating": -0.01
+      },
+      {
+        "timestamp": "2026-01-12T16:00:00Z",
+        "balance": 170.69,
+        "equity": 170.44,
+        "floating": -0.25
+      },
+      {
+        "timestamp": "2026-01-12T17:00:00Z",
+        "balance": 170.98,
+        "equity": 170.98,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-12T18:00:00Z",
+        "balance": 170.98,
+        "equity": 170.75,
+        "floating": -0.23
+      },
+      {
+        "timestamp": "2026-01-12T19:00:00Z",
+        "balance": 170.98,
+        "equity": 171.12,
+        "floating": 0.14
+      },
+      {
+        "timestamp": "2026-01-12T20:00:00Z",
+        "balance": 170.98,
+        "equity": 170.63,
+        "floating": -0.35
+      },
+      {
+        "timestamp": "2026-01-12T21:00:00Z",
+        "balance": 170.98,
+        "equity": 170.82,
+        "floating": -0.16
       }
     ]
   }
