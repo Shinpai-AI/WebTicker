@@ -1,30 +1,30 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-12T22:00:01Z",
-    "snapshot_at": "2026-01-12T21:00:00Z",
+    "generated_at": "2026-01-12T23:00:02Z",
+    "snapshot_at": "2026-01-12T22:00:00Z",
     "trade_active": true
   },
   "account": {
-    "balance": 170.98,
-    "equity": 170.82,
-    "floating": -0.16,
-    "snapshot_at": "2026-01-12T21:00:00Z"
+    "balance": 171.27,
+    "equity": 171.25,
+    "floating": -0.02,
+    "snapshot_at": "2026-01-12T22:00:00Z"
   },
   "overall": {
-    "profit": -67.58,
-    "trades": 219,
-    "wins": 116,
+    "profit": -67.29,
+    "trades": 220,
+    "wins": 117,
     "losses": 95,
-    "win_rate": 52.97
+    "win_rate": 53.18
   },
   "windows": {
     "7d": {
-      "profit": -2.65,
-      "trades": 8,
-      "wins": 3,
+      "profit": -2.36,
+      "trades": 9,
+      "wins": 4,
       "losses": 2,
-      "win_rate": 37.5,
+      "win_rate": 44.44,
       "best_trade": {
         "ticket": "164336774",
         "symbol": "AUDUSD",
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -7.5,
-      "trades": 44,
-      "wins": 27,
+      "profit": -7.21,
+      "trades": 45,
+      "wins": 28,
       "losses": 14,
-      "win_rate": 61.36,
+      "win_rate": 62.22,
       "best_trade": {
         "ticket": "100971555",
         "symbol": "GBPCAD",
@@ -74,11 +74,11 @@
       }
     },
     "365d": {
-      "profit": -67.58,
-      "trades": 219,
-      "wins": 116,
+      "profit": -67.29,
+      "trades": 220,
+      "wins": 117,
       "losses": 95,
-      "win_rate": 52.97,
+      "win_rate": 53.18,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -120,9 +120,9 @@
     },
     {
       "symbol": "AUDUSD",
-      "profit": 1.7700000000000005,
-      "trades": 17,
-      "wins": 10,
+      "profit": 2.0600000000000005,
+      "trades": 18,
+      "wins": 11,
       "losses": 7,
       "rank": 3
     },
@@ -186,6 +186,17 @@
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164374562",
+      "symbol": "AUDUSD",
+      "profit": 0.29,
+      "volume": 0.02,
+      "order_type": "BUY",
+      "closed_at": "2026-01-12T21:54:51Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 0.67116]"
+    },
     {
       "ticket": "164359889",
       "symbol": "AUDUSD",
@@ -284,17 +295,6 @@
       "exit": "Exit: SL",
       "exit_type": "sl",
       "comment": "Sharrow v6.0 BUY (H1)"
-    },
-    {
-      "ticket": "101005875",
-      "symbol": "GBPCAD",
-      "profit": 0.17,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2025-12-19T17:28:34Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "Sharrow v6.0 BUY (H1)"
     }
   ],
   "daily_breakdown": [
@@ -305,8 +305,8 @@
     },
     {
       "date": "2026-01-12",
-      "profit": -1.6599999999999997,
-      "trades": 7
+      "profit": -1.3699999999999997,
+      "trades": 8
     }
   ],
   "history": {
@@ -3158,6 +3158,19 @@
         "tp_label": null,
         "sl_label": "Hit",
         "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164374562",
+        "symbol": "AUDUSD",
+        "volume": 0.02,
+        "profit": 0.29,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 0.67116]",
+        "opened_at": "2026-01-12T21:54:51Z",
+        "closed_at": "2026-01-12T21:54:51Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
       }
     ],
     "snapshots": [
@@ -4666,6 +4679,12 @@
         "balance": 170.98,
         "equity": 170.82,
         "floating": -0.16
+      },
+      {
+        "timestamp": "2026-01-12T22:00:00Z",
+        "balance": 171.27,
+        "equity": 171.25,
+        "floating": -0.02
       }
     ]
   }
