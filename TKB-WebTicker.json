@@ -1,30 +1,30 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-13T14:00:02Z",
-    "snapshot_at": "2026-01-13T13:00:00Z",
+    "generated_at": "2026-01-13T15:00:05Z",
+    "snapshot_at": "2026-01-13T14:00:00Z",
     "trade_active": true
   },
   "account": {
-    "balance": 171.27,
-    "equity": 171.8,
-    "floating": 0.53,
-    "snapshot_at": "2026-01-13T13:00:00Z"
+    "balance": 171.44,
+    "equity": 170.98,
+    "floating": -0.46,
+    "snapshot_at": "2026-01-13T14:00:00Z"
   },
   "overall": {
-    "profit": -67.29,
-    "trades": 221,
-    "wins": 117,
+    "profit": -67.12,
+    "trades": 222,
+    "wins": 118,
     "losses": 95,
-    "win_rate": 52.94
+    "win_rate": 53.15
   },
   "windows": {
     "7d": {
-      "profit": -2.36,
-      "trades": 10,
-      "wins": 4,
+      "profit": -2.19,
+      "trades": 11,
+      "wins": 5,
       "losses": 2,
-      "win_rate": 40.0,
+      "win_rate": 45.45,
       "best_trade": {
         "ticket": "164336774",
         "symbol": "AUDUSD",
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -7.21,
-      "trades": 46,
-      "wins": 28,
+      "profit": -7.04,
+      "trades": 47,
+      "wins": 29,
       "losses": 14,
-      "win_rate": 60.87,
+      "win_rate": 61.7,
       "best_trade": {
         "ticket": "100971555",
         "symbol": "GBPCAD",
@@ -74,11 +74,11 @@
       }
     },
     "365d": {
-      "profit": -67.29,
-      "trades": 221,
-      "wins": 117,
+      "profit": -67.12,
+      "trades": 222,
+      "wins": 118,
       "losses": 95,
-      "win_rate": 52.94,
+      "win_rate": 53.15,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -187,6 +187,17 @@
   ],
   "recent_trades": [
     {
+      "ticket": "164394630",
+      "symbol": "EURJPY",
+      "profit": 0.17,
+      "volume": 0.01,
+      "order_type": "BUY",
+      "closed_at": "2026-01-13T13:30:22Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 185.228]"
+    },
+    {
       "ticket": "164387478",
       "symbol": "DOGEUSD",
       "profit": 0.0,
@@ -284,17 +295,6 @@
       "exit": "Exit Manual",
       "exit_type": "manual",
       "comment": null
-    },
-    {
-      "ticket": "164160729",
-      "symbol": "EURCHF",
-      "profit": -0.99,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2026-01-07T08:41:10Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "[sl 0.93063]"
     }
   ],
   "daily_breakdown": [
@@ -310,8 +310,8 @@
     },
     {
       "date": "2026-01-13",
-      "profit": 0.0,
-      "trades": 1
+      "profit": 0.17,
+      "trades": 2
     }
   ],
   "history": {
@@ -3189,6 +3189,19 @@
         "tp_label": null,
         "sl_label": null,
         "exit_reason": "DEAL_REASON_CLIENT"
+      },
+      {
+        "ticket": "164394630",
+        "symbol": "EURJPY",
+        "volume": 0.01,
+        "profit": 0.17,
+        "order_type": "DEAL_TYPE_BUY",
+        "comment": "[sl 185.228]",
+        "opened_at": "2026-01-13T13:30:22Z",
+        "closed_at": "2026-01-13T13:30:22Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
       }
     ],
     "snapshots": [
@@ -4793,6 +4806,12 @@
         "balance": 171.27,
         "equity": 171.8,
         "floating": 0.53
+      },
+      {
+        "timestamp": "2026-01-13T14:00:00Z",
+        "balance": 171.44,
+        "equity": 170.98,
+        "floating": -0.46
       }
     ]
   }
