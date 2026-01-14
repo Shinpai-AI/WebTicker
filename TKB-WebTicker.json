@@ -1,15 +1,15 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-14T06:00:04Z",
-    "snapshot_at": "2026-01-14T05:00:00Z",
+    "generated_at": "2026-01-14T07:00:03Z",
+    "snapshot_at": "2026-01-14T06:00:00Z",
     "trade_active": true
   },
   "account": {
     "balance": 171.92,
-    "equity": 161.88,
-    "floating": -10.04,
-    "snapshot_at": "2026-01-14T05:00:00Z"
+    "equity": 158.84,
+    "floating": -13.08,
+    "snapshot_at": "2026-01-14T06:00:00Z"
   },
   "overall": {
     "profit": -66.78,
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -6.7,
-      "trades": 49,
+      "profit": -6.35,
+      "trades": 48,
       "wins": 31,
-      "losses": 14,
-      "win_rate": 63.27,
+      "losses": 13,
+      "win_rate": 64.58,
       "best_trade": {
         "ticket": "100971555",
         "symbol": "GBPCAD",
@@ -4928,6 +4928,12 @@
         "balance": 171.92,
         "equity": 161.88,
         "floating": -10.04
+      },
+      {
+        "timestamp": "2026-01-14T06:00:00Z",
+        "balance": 171.92,
+        "equity": 158.84,
+        "floating": -13.08
       }
     ]
   }
