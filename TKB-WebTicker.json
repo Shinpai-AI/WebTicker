@@ -1,30 +1,30 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-14T11:00:03Z",
-    "snapshot_at": "2026-01-14T10:00:00Z",
+    "generated_at": "2026-01-14T12:00:04Z",
+    "snapshot_at": "2026-01-14T11:00:00Z",
     "trade_active": true
   },
   "account": {
-    "balance": 171.91,
-    "equity": 160.58,
-    "floating": -11.33,
-    "snapshot_at": "2026-01-14T10:00:00Z"
+    "balance": 157.22,
+    "equity": 156.93,
+    "floating": -0.29,
+    "snapshot_at": "2026-01-14T11:00:00Z"
   },
   "overall": {
-    "profit": -66.79,
-    "trades": 225,
+    "profit": -81.48,
+    "trades": 226,
     "wins": 120,
-    "losses": 96,
-    "win_rate": 53.33
+    "losses": 97,
+    "win_rate": 53.1
   },
   "windows": {
     "7d": {
-      "profit": -0.87,
-      "trades": 13,
+      "profit": -15.56,
+      "trades": 14,
       "wins": 7,
-      "losses": 2,
-      "win_rate": 53.85,
+      "losses": 3,
+      "win_rate": 50.0,
       "best_trade": {
         "ticket": "164336774",
         "symbol": "AUDUSD",
@@ -36,22 +36,22 @@
         "exit_type": "sl"
       },
       "worst_trade": {
-        "ticket": "164333205",
-        "symbol": "AUDUSD",
-        "profit": -2.51,
-        "volume": 0.02,
-        "order_type": "BUY",
-        "closed_at": "2026-01-12T13:16:29Z",
+        "ticket": "164460095",
+        "symbol": "NAS100",
+        "profit": -14.69,
+        "volume": 0.1,
+        "order_type": "SELL",
+        "closed_at": "2026-01-14T10:20:14Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
     },
     "30d": {
-      "profit": -6.64,
-      "trades": 48,
+      "profit": -21.33,
+      "trades": 49,
       "wins": 30,
-      "losses": 14,
-      "win_rate": 62.5,
+      "losses": 15,
+      "win_rate": 61.22,
       "best_trade": {
         "ticket": "100971555",
         "symbol": "GBPCAD",
@@ -63,22 +63,22 @@
         "exit_type": "tp"
       },
       "worst_trade": {
-        "ticket": "164333205",
-        "symbol": "AUDUSD",
-        "profit": -2.51,
-        "volume": 0.02,
-        "order_type": "BUY",
-        "closed_at": "2026-01-12T13:16:29Z",
+        "ticket": "164460095",
+        "symbol": "NAS100",
+        "profit": -14.69,
+        "volume": 0.1,
+        "order_type": "SELL",
+        "closed_at": "2026-01-14T10:20:14Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
     },
     "365d": {
-      "profit": -66.79,
-      "trades": 225,
+      "profit": -81.48,
+      "trades": 226,
       "wins": 120,
-      "losses": 96,
-      "win_rate": 53.33,
+      "losses": 97,
+      "win_rate": 53.1,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -90,12 +90,12 @@
         "exit_type": "manual"
       },
       "worst_trade": {
-        "ticket": "98591492",
-        "symbol": "AUDJPY",
-        "profit": -7.65,
-        "volume": 0.03,
+        "ticket": "164460095",
+        "symbol": "NAS100",
+        "profit": -14.69,
+        "volume": 0.1,
         "order_type": "SELL",
-        "closed_at": "2025-10-06T21:05:00Z",
+        "closed_at": "2026-01-14T10:20:14Z",
         "exit": "Exit: SL",
         "exit_type": "sl"
       }
@@ -145,14 +145,6 @@
   ],
   "bottom_symbols": [
     {
-      "symbol": "GBPJPY",
-      "profit": -7.130000000000001,
-      "trades": 11,
-      "wins": 5,
-      "losses": 5,
-      "rank": 21
-    },
-    {
       "symbol": "USDJPY",
       "profit": -7.61,
       "trades": 11,
@@ -177,15 +169,34 @@
       "rank": 24
     },
     {
+      "symbol": "NAS100",
+      "profit": -14.69,
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "rank": 25
+    },
+    {
       "symbol": "GBPUSD",
       "profit": -18.209999999999997,
       "trades": 20,
       "wins": 10,
       "losses": 10,
-      "rank": 25
+      "rank": 26
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164460095",
+      "symbol": "NAS100",
+      "profit": -14.69,
+      "volume": 0.1,
+      "order_type": "SELL",
+      "closed_at": "2026-01-14T10:20:14Z",
+      "exit": "Exit: SL",
+      "exit_type": "sl",
+      "comment": "[sl 25643.8]"
+    },
     {
       "ticket": "164454956",
       "symbol": "EURJPY",
@@ -284,17 +295,6 @@
       "exit": "Exit: SL",
       "exit_type": "sl",
       "comment": "[sl 0.67129]"
-    },
-    {
-      "ticket": "164333205",
-      "symbol": "AUDUSD",
-      "profit": -2.51,
-      "volume": 0.02,
-      "order_type": "BUY",
-      "closed_at": "2026-01-12T13:16:29Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "[sl 0.67184]"
     }
   ],
   "daily_breakdown": [
@@ -310,8 +310,8 @@
     },
     {
       "date": "2026-01-14",
-      "profit": -0.01,
-      "trades": 1
+      "profit": -14.7,
+      "trades": 2
     }
   ],
   "history": {
@@ -3241,6 +3241,19 @@
         "tp_label": null,
         "sl_label": "Hit",
         "exit_reason": "DEAL_REASON_SL"
+      },
+      {
+        "ticket": "164460095",
+        "symbol": "NAS100",
+        "volume": 0.1,
+        "profit": -14.69,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": "[sl 25643.8]",
+        "opened_at": "2026-01-14T10:20:14Z",
+        "closed_at": "2026-01-14T10:20:14Z",
+        "tp_label": null,
+        "sl_label": "Hit",
+        "exit_reason": "DEAL_REASON_SL"
       }
     ],
     "snapshots": [
@@ -4971,6 +4984,12 @@
         "balance": 171.91,
         "equity": 160.58,
         "floating": -11.33
+      },
+      {
+        "timestamp": "2026-01-14T11:00:00Z",
+        "balance": 157.22,
+        "equity": 156.93,
+        "floating": -0.29
       }
     ]
   }
