@@ -1,15 +1,15 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-14T10:00:03Z",
-    "snapshot_at": "2026-01-14T09:00:00Z",
+    "generated_at": "2026-01-14T11:00:03Z",
+    "snapshot_at": "2026-01-14T10:00:00Z",
     "trade_active": true
   },
   "account": {
     "balance": 171.91,
-    "equity": 161.23,
-    "floating": -10.68,
-    "snapshot_at": "2026-01-14T09:00:00Z"
+    "equity": 160.58,
+    "floating": -11.33,
+    "snapshot_at": "2026-01-14T10:00:00Z"
   },
   "overall": {
     "profit": -66.79,
@@ -4965,6 +4965,12 @@
         "balance": 171.91,
         "equity": 161.23,
         "floating": -10.68
+      },
+      {
+        "timestamp": "2026-01-14T10:00:00Z",
+        "balance": 171.91,
+        "equity": 160.58,
+        "floating": -11.33
       }
     ]
   }
