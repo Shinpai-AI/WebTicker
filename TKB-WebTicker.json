@@ -1,30 +1,30 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-16T15:00:03Z",
-    "snapshot_at": "2026-01-16T15:00:00Z",
+    "generated_at": "2026-01-16T16:00:02Z",
+    "snapshot_at": "2026-01-16T16:00:00Z",
     "trade_active": true
   },
   "account": {
-    "balance": 157.86,
-    "equity": 147.76,
-    "floating": -10.1,
-    "snapshot_at": "2026-01-16T15:00:00Z"
+    "balance": 146.58,
+    "equity": 146.58,
+    "floating": 0.0,
+    "snapshot_at": "2026-01-16T16:00:00Z"
   },
   "overall": {
-    "profit": -80.84,
-    "trades": 229,
+    "profit": -92.12,
+    "trades": 230,
     "wins": 121,
-    "losses": 99,
-    "win_rate": 52.84
+    "losses": 100,
+    "win_rate": 52.61
   },
   "windows": {
     "7d": {
-      "profit": -14.92,
-      "trades": 17,
+      "profit": -26.2,
+      "trades": 18,
       "wins": 8,
-      "losses": 5,
-      "win_rate": 47.06,
+      "losses": 6,
+      "win_rate": 44.44,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -23.04,
-      "trades": 42,
+      "profit": -30.66,
+      "trades": 39,
       "wins": 22,
-      "losses": 16,
-      "win_rate": 52.38,
+      "losses": 13,
+      "win_rate": 56.41,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
@@ -74,11 +74,11 @@
       }
     },
     "365d": {
-      "profit": -80.84,
-      "trades": 229,
+      "profit": -92.12,
+      "trades": 230,
       "wins": 121,
-      "losses": 99,
-      "win_rate": 52.84,
+      "losses": 100,
+      "win_rate": 52.61,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -161,20 +161,12 @@
       "rank": 23
     },
     {
-      "symbol": "NAS100",
-      "profit": -11.84,
-      "trades": 2,
-      "wins": 1,
-      "losses": 1,
-      "rank": 24
-    },
-    {
       "symbol": "USDCHF",
       "profit": -13.439999999999998,
       "trades": 12,
       "wins": 5,
       "losses": 7,
-      "rank": 25
+      "rank": 24
     },
     {
       "symbol": "GBPUSD",
@@ -182,10 +174,29 @@
       "trades": 20,
       "wins": 10,
       "losses": 10,
+      "rank": 25
+    },
+    {
+      "symbol": "NAS100",
+      "profit": -23.119999999999997,
+      "trades": 3,
+      "wins": 1,
+      "losses": 2,
       "rank": 26
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164585106",
+      "symbol": "NAS100",
+      "profit": -11.28,
+      "volume": 0.1,
+      "order_type": "SELL",
+      "closed_at": "2026-01-16T15:01:32Z",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
+      "comment": null
+    },
     {
       "ticket": "164536894",
       "symbol": "NAS100",
@@ -284,17 +295,6 @@
       "exit": "Exit Manual",
       "exit_type": "manual",
       "comment": null
-    },
-    {
-      "ticket": "164374562",
-      "symbol": "AUDUSD",
-      "profit": 0.29,
-      "volume": 0.02,
-      "order_type": "BUY",
-      "closed_at": "2026-01-12T21:54:51Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "[sl 0.67116]"
     }
   ],
   "daily_breakdown": [
@@ -317,6 +317,11 @@
       "date": "2026-01-15",
       "profit": 2.0700000000000003,
       "trades": 2
+    },
+    {
+      "date": "2026-01-16",
+      "profit": -11.28,
+      "trades": 1
     }
   ],
   "history": {
@@ -3298,6 +3303,19 @@
         "tp_label": null,
         "sl_label": null,
         "exit_reason": "DEAL_REASON_CLIENT"
+      },
+      {
+        "ticket": "164585106",
+        "symbol": "NAS100",
+        "volume": 0.1,
+        "profit": -11.28,
+        "order_type": "DEAL_TYPE_SELL",
+        "comment": null,
+        "opened_at": "2026-01-16T15:01:32Z",
+        "closed_at": "2026-01-16T15:01:32Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": "DEAL_REASON_CLIENT"
       }
     ],
     "snapshots": [
@@ -5334,6 +5352,12 @@
         "balance": 157.86,
         "equity": 147.76,
         "floating": -10.1
+      },
+      {
+        "timestamp": "2026-01-16T16:00:00Z",
+        "balance": 146.58,
+        "equity": 146.58,
+        "floating": 0.0
       }
     ]
   }
