@@ -1,7 +1,7 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-18T19:00:02Z",
+    "generated_at": "2026-01-18T20:00:03Z",
     "snapshot_at": "2026-01-16T21:00:00Z",
     "trade_active": true
   },
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -27.02,
-      "trades": 20,
-      "wins": 9,
+      "profit": -27.19,
+      "trades": 19,
+      "wins": 8,
       "losses": 7,
-      "win_rate": 45.0,
+      "win_rate": 42.11,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
