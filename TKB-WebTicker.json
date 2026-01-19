@@ -1,15 +1,15 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-19T13:00:05Z",
-    "snapshot_at": "2026-01-19T12:00:00Z",
+    "generated_at": "2026-01-19T14:00:04Z",
+    "snapshot_at": "2026-01-19T13:00:00Z",
     "trade_active": true
   },
   "account": {
     "balance": 146.58,
     "equity": 146.58,
     "floating": 0.0,
-    "snapshot_at": "2026-01-19T12:00:00Z"
+    "snapshot_at": "2026-01-19T13:00:00Z"
   },
   "overall": {
     "profit": -92.12,
@@ -20,11 +20,11 @@
   },
   "windows": {
     "7d": {
-      "profit": -26.2,
-      "trades": 15,
+      "profit": -23.69,
+      "trades": 14,
       "wins": 8,
-      "losses": 6,
-      "win_rate": 53.33,
+      "losses": 5,
+      "win_rate": 57.14,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
@@ -300,8 +300,8 @@
   "daily_breakdown": [
     {
       "date": "2026-01-12",
-      "profit": -1.3699999999999997,
-      "trades": 5
+      "profit": 1.1400000000000001,
+      "trades": 4
     },
     {
       "date": "2026-01-13",
@@ -5469,6 +5469,12 @@
       },
       {
         "timestamp": "2026-01-19T12:00:00Z",
+        "balance": 146.58,
+        "equity": 146.58,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-19T13:00:00Z",
         "balance": 146.58,
         "equity": 146.58,
         "floating": 0.0
