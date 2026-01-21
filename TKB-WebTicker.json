@@ -1,15 +1,15 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-21T10:00:01Z",
-    "snapshot_at": "2026-01-21T09:26:26Z",
+    "generated_at": "2026-01-21T11:00:01Z",
+    "snapshot_at": "2026-01-21T10:26:31Z",
     "trade_active": true
   },
   "account": {
     "balance": 142.54,
     "equity": 142.54,
     "floating": 0.0,
-    "snapshot_at": "2026-01-21T09:26:26Z"
+    "snapshot_at": "2026-01-21T10:26:31Z"
   },
   "overall": {
     "profit": -95.47,
@@ -20,11 +20,11 @@
   },
   "windows": {
     "7d": {
-      "profit": -28.68,
-      "trades": 8,
+      "profit": -13.99,
+      "trades": 7,
       "wins": 2,
-      "losses": 6,
-      "win_rate": 25.0,
+      "losses": 5,
+      "win_rate": 28.57,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
@@ -36,14 +36,14 @@
         "exit_type": "manual"
       },
       "worst_trade": {
-        "ticket": "164460095",
+        "ticket": "164585106",
         "symbol": "NAS100",
-        "profit": -14.69,
+        "profit": -11.28,
         "volume": 0.1,
         "order_type": "SELL",
-        "closed_at": "2026-01-14T10:20:14Z",
-        "exit": "Exit: SL",
-        "exit_type": "sl"
+        "closed_at": "2026-01-16T15:01:32Z",
+        "exit": "Exit Manual",
+        "exit_type": "manual"
       }
     },
     "30d": {
@@ -300,8 +300,8 @@
   "daily_breakdown": [
     {
       "date": "2026-01-14",
-      "profit": -16.12,
-      "trades": 2
+      "profit": -1.43,
+      "trades": 1
     },
     {
       "date": "2026-01-15",
@@ -6167,6 +6167,30 @@
       },
       {
         "timestamp": "2026-01-21T09:26:26Z",
+        "balance": 142.54,
+        "equity": 142.54,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-21T10:26:23Z",
+        "balance": 142.54,
+        "equity": 142.54,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-21T10:26:24Z",
+        "balance": 142.54,
+        "equity": 142.54,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-21T10:26:30Z",
+        "balance": 142.54,
+        "equity": 142.54,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-21T10:26:31Z",
         "balance": 142.54,
         "equity": 142.54,
         "floating": 0.0
