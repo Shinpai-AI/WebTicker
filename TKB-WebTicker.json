@@ -1,30 +1,30 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-23T14:00:02Z",
-    "snapshot_at": "2026-01-23T13:08:07Z",
+    "generated_at": "2026-01-23T15:00:01Z",
+    "snapshot_at": "2026-01-23T14:46:57Z",
     "trade_active": true
   },
   "account": {
-    "balance": 143.39,
-    "equity": 143.39,
+    "balance": 141.58,
+    "equity": 141.58,
     "floating": 0.0,
-    "snapshot_at": "2026-01-23T13:08:07Z"
+    "snapshot_at": "2026-01-23T14:46:57Z"
   },
   "overall": {
-    "profit": -94.62,
-    "trades": 234,
+    "profit": -96.43,
+    "trades": 235,
     "wins": 123,
-    "losses": 102,
-    "win_rate": 52.56
+    "losses": 103,
+    "win_rate": 52.34
   },
   "windows": {
     "7d": {
-      "profit": -13.78,
-      "trades": 5,
+      "profit": -15.59,
+      "trades": 6,
       "wins": 2,
-      "losses": 3,
-      "win_rate": 40.0,
+      "losses": 4,
+      "win_rate": 33.33,
       "best_trade": {
         "ticket": "164652499",
         "symbol": "USDCAD",
@@ -47,11 +47,11 @@
       }
     },
     "30d": {
-      "profit": -29.69,
-      "trades": 23,
+      "profit": -31.5,
+      "trades": 24,
       "wins": 10,
-      "losses": 9,
-      "win_rate": 43.48,
+      "losses": 10,
+      "win_rate": 41.67,
       "best_trade": {
         "ticket": "164536894",
         "symbol": "NAS100",
@@ -74,11 +74,11 @@
       }
     },
     "365d": {
-      "profit": -94.62,
-      "trades": 234,
+      "profit": -96.43,
+      "trades": 235,
       "wins": 123,
-      "losses": 102,
-      "win_rate": 52.56,
+      "losses": 103,
+      "win_rate": 52.34,
       "best_trade": {
         "ticket": "98663842",
         "symbol": "CHFJPY",
@@ -178,14 +178,25 @@
     },
     {
       "symbol": "NAS100",
-      "profit": -24.459999999999997,
-      "trades": 4,
+      "profit": -26.269999999999996,
+      "trades": 5,
       "wins": 1,
-      "losses": 3,
+      "losses": 4,
       "rank": 26
     }
   ],
   "recent_trades": [
+    {
+      "ticket": "164883636",
+      "symbol": "NAS100",
+      "profit": -1.81,
+      "volume": 0.1,
+      "order_type": "BUY",
+      "closed_at": "2026-01-23T14:46:51Z",
+      "exit": "Exit Manual",
+      "exit_type": "manual",
+      "comment": "SharrowLOL"
+    },
     {
       "ticket": "164862595",
       "symbol": "GBPUSD",
@@ -284,17 +295,6 @@
       "exit": "Exit: SL",
       "exit_type": "sl",
       "comment": "[sl 25643.8]"
-    },
-    {
-      "ticket": "164454956",
-      "symbol": "EURJPY",
-      "profit": -0.01,
-      "volume": 0.01,
-      "order_type": "BUY",
-      "closed_at": "2026-01-14T08:34:44Z",
-      "exit": "Exit: SL",
-      "exit_type": "sl",
-      "comment": "[sl 185.142]"
     }
   ],
   "daily_breakdown": [
@@ -320,8 +320,8 @@
     },
     {
       "date": "2026-01-23",
-      "profit": 0.85,
-      "trades": 1
+      "profit": -0.9600000000000001,
+      "trades": 2
     }
   ],
   "history": {
@@ -3365,6 +3365,19 @@
         "comment": "SharrowLOL",
         "opened_at": "2026-01-23T07:00:00Z",
         "closed_at": "2026-01-23T07:00:16Z",
+        "tp_label": null,
+        "sl_label": null,
+        "exit_reason": "manual"
+      },
+      {
+        "ticket": "164883636",
+        "symbol": "NAS100",
+        "volume": 0.1,
+        "profit": -1.81,
+        "order_type": "BUY",
+        "comment": "SharrowLOL",
+        "opened_at": "2026-01-23T14:45:00Z",
+        "closed_at": "2026-01-23T14:46:51Z",
         "tp_label": null,
         "sl_label": null,
         "exit_reason": "manual"
@@ -6819,6 +6832,36 @@
         "timestamp": "2026-01-23T13:08:07Z",
         "balance": 143.39,
         "equity": 143.39,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T14:00:19Z",
+        "balance": 143.39,
+        "equity": 143.39,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T14:08:07Z",
+        "balance": 143.39,
+        "equity": 143.39,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T14:19:58Z",
+        "balance": 143.39,
+        "equity": 143.39,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T14:46:51Z",
+        "balance": 141.58,
+        "equity": 141.58,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T14:46:57Z",
+        "balance": 141.58,
+        "equity": 141.58,
         "floating": 0.0
       }
     ]
