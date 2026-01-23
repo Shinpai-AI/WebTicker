@@ -1,15 +1,15 @@
 {
   "meta": {
     "bot": "Goldjunge (Ray)",
-    "generated_at": "2026-01-23T15:00:01Z",
-    "snapshot_at": "2026-01-23T14:46:57Z",
+    "generated_at": "2026-01-23T16:00:02Z",
+    "snapshot_at": "2026-01-23T15:46:57Z",
     "trade_active": true
   },
   "account": {
     "balance": 141.58,
     "equity": 141.58,
     "floating": 0.0,
-    "snapshot_at": "2026-01-23T14:46:57Z"
+    "snapshot_at": "2026-01-23T15:46:57Z"
   },
   "overall": {
     "profit": -96.43,
@@ -20,11 +20,11 @@
   },
   "windows": {
     "7d": {
-      "profit": -15.59,
-      "trades": 6,
+      "profit": -4.31,
+      "trades": 5,
       "wins": 2,
-      "losses": 4,
-      "win_rate": 33.33,
+      "losses": 3,
+      "win_rate": 40.0,
       "best_trade": {
         "ticket": "164652499",
         "symbol": "USDCAD",
@@ -36,12 +36,12 @@
         "exit_type": "sl"
       },
       "worst_trade": {
-        "ticket": "164585106",
-        "symbol": "NAS100",
-        "profit": -11.28,
-        "volume": 0.1,
+        "ticket": "164732878",
+        "symbol": "GBPUSD",
+        "profit": -3.72,
+        "volume": 0.03,
         "order_type": "SELL",
-        "closed_at": "2026-01-16T15:01:32Z",
+        "closed_at": "2026-01-21T07:26:23Z",
         "exit": "Exit Manual",
         "exit_type": "manual"
       }
@@ -298,11 +298,6 @@
     }
   ],
   "daily_breakdown": [
-    {
-      "date": "2026-01-16",
-      "profit": -11.28,
-      "trades": 1
-    },
     {
       "date": "2026-01-19",
       "profit": 1.71,
@@ -6860,6 +6855,18 @@
       },
       {
         "timestamp": "2026-01-23T14:46:57Z",
+        "balance": 141.58,
+        "equity": 141.58,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T15:46:51Z",
+        "balance": 141.58,
+        "equity": 141.58,
+        "floating": 0.0
+      },
+      {
+        "timestamp": "2026-01-23T15:46:57Z",
         "balance": 141.58,
         "equity": 141.58,
         "floating": 0.0
