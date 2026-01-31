@@ -1,0 +1,38 @@
+[2026-01-30 17:13:35] ===== RUN-WebTicker.sh START =====
+[2026-01-30 17:13:35] Nutze system python3
+[2026-01-30 17:13:35] Starte: python3 WebTicker.py
+[2026-01-30 17:13:36] INFO: ==================================================
+[2026-01-30 17:13:36] INFO: WebTicker START
+[2026-01-30 17:13:36] INFO: ==================================================
+[2026-01-30 17:13:36] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-01-30 17:13:36] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-01-30 17:13:37] INFO: ReportHistory: 243 Trades geladen
+[2026-01-30 17:13:37] INFO: state.log nicht gefunden - nur ReportHistory nutzen
+[2026-01-30 17:13:37] INFO: Gesamt: 243 Trades, 0 Snapshots
+[2026-01-30 17:13:37] INFO: JSON gespeichert: WebTicker.json
+[2026-01-30 17:13:37] INFO: HTML gespeichert: WebTicker.html
+[2026-01-30 17:13:37] INFO: Welldone geschrieben: welldone
+[2026-01-30 17:13:37] INFO: ==================================================
+[2026-01-30 17:13:37] INFO: WebTicker FERTIG!
+[2026-01-30 17:13:37] INFO: ==================================================
+[2026-01-30 17:13:37] ===== ERFOLG =====
+[2026-01-30 17:24:19] ===== RUN-WebTicker.sh START =====
+[2026-01-30 17:24:19] Nutze system python3
+[2026-01-30 17:24:19] Starte: python3 WebTicker.py
+[2026-01-30 17:24:20] INFO: ==================================================
+[2026-01-30 17:24:20] INFO: WebTicker START
+[2026-01-30 17:24:20] INFO: ==================================================
+[2026-01-30 17:24:20] INFO: Lade Config: /media/shinpai/Shinpai-AI/Trading/Goldjunge/TKB-config.json
+[2026-01-30 17:24:20] INFO: State-Log nicht in MT5: /home/shinpai/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-01-30 17:24:20] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-01-30 17:24:20] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-01-30 17:24:20] INFO: ReportHistory: 243 Trades geladen
+[2026-01-30 17:24:20] INFO: state.log nicht gefunden - nur ReportHistory nutzen
+[2026-01-30 17:24:20] INFO: Gesamt: 243 Trades, 0 Snapshots
+[2026-01-30 17:24:20] INFO: JSON gespeichert: WebTicker.json
+[2026-01-30 17:24:20] INFO: HTML gespeichert: WebTicker.html
+[2026-01-30 17:24:20] INFO: Welldone geschrieben: welldone
+[2026-01-30 17:24:20] INFO: ==================================================
+[2026-01-30 17:24:20] INFO: WebTicker FERTIG!
+[2026-01-30 17:24:20] INFO: ==================================================
+[2026-01-30 17:24:21] ===== ERFOLG =====

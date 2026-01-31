@@ -34,17 +34,12 @@ except ImportError:
 # =============================================================================
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-BOT_NAME = "Goldjunge (Ray)"
+CONFIG_PATH = SCRIPT_DIR.parent / "TKB-config.json"  # Eine Ebene höher!
 
-# Input files (im Arbeitsverzeichnis)
-REPORT_PATTERN = "ReportHistory-*.html"
-STATE_LOG_NAME = "Goldjunge-state.log"
-
-# Output files
+# Output files (immer im WebTicker-Ordner)
 OUTPUT_JSON = SCRIPT_DIR / "WebTicker.json"
 OUTPUT_HTML = SCRIPT_DIR / "WebTicker.html"
 OUTPUT_LOG = SCRIPT_DIR / "WebTicker.log"
-OUTPUT_WELLDONE = SCRIPT_DIR / "welldone"
 
 # Logging setup
 logging.basicConfig(
@@ -57,6 +52,75 @@ logging.basicConfig(
     ]
 )
 LOG = logging.getLogger("WebTicker")
+
+
+# =============================================================================
+# CONFIG LOADING
+# =============================================================================
+
+def load_config() -> Dict[str, Any]:
+    """Lädt TKB-config.json aus dem Parent-Ordner."""
+    if not CONFIG_PATH.exists():
+        LOG.warning(f"Config nicht gefunden: {CONFIG_PATH}")
+        return {}
+
+    LOG.info(f"Lade Config: {CONFIG_PATH}")
+    try:
+        return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, IOError) as e:
+        LOG.error(f"Config-Fehler: {e}")
+        return {}
+
+
+def get_paths_from_config(config: Dict[str, Any]) -> Tuple[Optional[Path], Optional[Path], str]:
+    """
+    Extrahiert Pfade aus der Config.
+    Returns: (state_log_path, report_path, bot_name)
+    """
+    paths_cfg = config.get("paths", {})
+    web_ticker_cfg = config.get("web_ticker", {})
+    project_cfg = config.get("project", {})
+
+    bot_name = project_cfg.get("name", "Goldjunge (Ray)")
+
+    # State-Log Pfad: MT5-Ordner/MQL5/Files/Goldjunge-state.log
+    mt5_path = paths_cfg.get("mt5_path", "")
+    mt5_files_sub = paths_cfg.get("mt5_files_subpath", "MQL5/Files")
+    state_log_name = web_ticker_cfg.get("state_log", "Goldjunge-state.log")
+
+    state_log_path = None
+    if mt5_path:
+        remote_state = Path(mt5_path) / mt5_files_sub / state_log_name
+        if remote_state.exists():
+            state_log_path = remote_state
+            LOG.info(f"State-Log aus MT5: {state_log_path}")
+        else:
+            LOG.info(f"State-Log nicht in MT5: {remote_state}")
+
+    # Fallback: Im WebTicker-Ordner gucken
+    if not state_log_path:
+        local_state = SCRIPT_DIR / state_log_name
+        if local_state.exists():
+            state_log_path = local_state
+            LOG.info(f"State-Log lokal: {state_log_path}")
+
+    # ReportHistory: Erst aus Config, dann Wildcard
+    report_name = web_ticker_cfg.get("initial_statement", "")
+    report_path = None
+
+    if report_name:
+        local_report = SCRIPT_DIR / report_name
+        if local_report.exists():
+            report_path = local_report
+
+    # Fallback: Wildcard-Suche im WebTicker-Ordner
+    if not report_path:
+        pattern = str(SCRIPT_DIR / "ReportHistory-*.html")
+        files = glob.glob(pattern)
+        if files:
+            report_path = Path(sorted(files, key=lambda f: Path(f).stat().st_mtime, reverse=True)[0])
+
+    return state_log_path, report_path, bot_name
 
 # =============================================================================
 # UTILITY FUNCTIONS
@@ -110,16 +174,6 @@ def canonical_side(order_type: Optional[str]) -> str:
 # =============================================================================
 # DATA LOADING - ReportHistory (HTML)
 # =============================================================================
-
-def find_report_file() -> Optional[Path]:
-    """Sucht ReportHistory-*.html im Arbeitsverzeichnis."""
-    pattern = str(SCRIPT_DIR / REPORT_PATTERN)
-    files = glob.glob(pattern)
-    if not files:
-        return None
-    # Neueste Datei nehmen (falls mehrere)
-    return Path(sorted(files, key=lambda f: Path(f).stat().st_mtime, reverse=True)[0])
-
 
 def load_report_html(path: Path) -> List[Dict[str, Any]]:
     """Parst ReportHistory HTML und extrahiert Trades."""
@@ -207,12 +261,6 @@ def load_report_html(path: Path) -> List[Dict[str, Any]]:
 # =============================================================================
 # DATA LOADING - Goldjunge-state.log
 # =============================================================================
-
-def find_state_log() -> Optional[Path]:
-    """Sucht Goldjunge-state.log im Arbeitsverzeichnis."""
-    path = SCRIPT_DIR / STATE_LOG_NAME
-    return path if path.exists() else None
-
 
 def load_state_log(path: Path) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     """Parst state.log und extrahiert Trades + Snapshots."""
@@ -497,7 +545,7 @@ def get_recent_trades(trades: List[Dict[str, Any]], limit: int = 10) -> List[Dic
 EXIT_LABELS = {"tp": "Exit: TP", "sl": "Exit: SL", "manual": "Exit Manual"}
 
 
-def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]]) -> str:
+def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]], bot_name: str = "Goldjunge (Ray)") -> str:
     """Generiert das HTML Dashboard."""
 
     now = datetime.now(timezone.utc)
@@ -572,7 +620,7 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]])
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>{BOT_NAME} Live-Ticker</title>
+    <title>{bot_name} Live-Ticker</title>
     <style>
         body {{ font-family: 'Inter', Arial, sans-serif; margin: 0; padding: 24px; background: #070c16; color: #f5f6fb; }}
         h1 {{ margin: 0 0 12px; font-size: 1.8rem; }}
@@ -606,7 +654,7 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]])
     </style>
 </head>
 <body>
-    <h1>{BOT_NAME} Live-Ticker</h1>
+    <h1>{bot_name} Live-Ticker</h1>
     <div class="meta">Snapshot: {html_escape(snap_time)} · Generiert: {isoformat(now)}</div>
 
     <div class="cards">
@@ -642,15 +690,17 @@ def main() -> int:
     LOG.info("WebTicker START")
     LOG.info("=" * 50)
 
-    # 1. Datenquellen finden
-    report_path = find_report_file()
-    log_path = find_state_log()
+    # 1. Config laden
+    config = load_config()
+
+    # 2. Pfade aus Config holen
+    log_path, report_path, bot_name = get_paths_from_config(config)
 
     report_trades: List[Dict[str, Any]] = []
     log_trades: List[Dict[str, Any]] = []
     log_snapshots: List[Dict[str, Any]] = []
 
-    # 2. Daten laden nach Logik
+    # 3. Daten laden nach Logik
     if report_path:
         LOG.info(f"ReportHistory gefunden: {report_path.name}")
         report_trades = load_report_html(report_path)
@@ -669,7 +719,7 @@ def main() -> int:
         LOG.error("Keine Daten anliegend!")
         return 1
 
-    # 3. Daten mergen
+    # 4. Daten mergen
     trades, snapshots = merge_data(report_trades, log_trades, log_snapshots)
     LOG.info(f"Gesamt: {len(trades)} Trades, {len(snapshots)} Snapshots")
 
@@ -677,14 +727,14 @@ def main() -> int:
         LOG.error("Keine Trades nach dem Merge!")
         return 1
 
-    # 4. Payload bauen
+    # 5. Payload bauen
     now = datetime.now(timezone.utc)
     stats = calc_stats(trades)
     latest_snap = snapshots[-1] if snapshots else None
 
     payload = {
         "meta": {
-            "bot": BOT_NAME,
+            "bot": bot_name,
             "generated_at": isoformat(now),
             "snapshot_at": isoformat(latest_snap["timestamp"]) if latest_snap else None,
         },
@@ -696,19 +746,13 @@ def main() -> int:
         "overall": stats,
     }
 
-    # 5. JSON speichern
+    # 6. JSON speichern
     save_history(trades, snapshots, payload)
 
-    # 6. HTML generieren
-    html = generate_html(trades, snapshots)
+    # 7. HTML generieren
+    html = generate_html(trades, snapshots, bot_name)
     OUTPUT_HTML.write_text(html, encoding="utf-8")
     LOG.info(f"HTML gespeichert: {OUTPUT_HTML.name}")
-
-    # 7. Welldone Marker
-    stats_7d = calc_stats(trades, 7)
-    welldone_content = f"{isoformat(now)}\nprofit_7d={stats_7d['profit']}\ntrades_7d={stats_7d['trades']}\n"
-    OUTPUT_WELLDONE.write_text(welldone_content, encoding="utf-8")
-    LOG.info(f"Welldone geschrieben: {OUTPUT_WELLDONE.name}")
 
     LOG.info("=" * 50)
     LOG.info("WebTicker FERTIG!")

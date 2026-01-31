@@ -9,9 +9,6 @@ config.json
 .env
 ReportHistory-*
 
-# === LOGS ===
-*.log
-
 # === SYSTEM ===
 .DS_Store
 Thumbs.db
@@ -30,12 +27,16 @@ Thumbs.db
 __pycache__/
 *.pyc
 venv/
+welldone
 
 # === GEPUSHT WERDEN ===
-# WebTicker.py
+# .gitignore
+# README.md
+# ReportHistory-*.html
+# ReportHistory-*.xlsx
+# requirements.txt
+# RUN-WebTicker.sh
 # WebTicker.html
 # WebTicker.json
-# RUN-WebTicker.sh
-# requirements.txt
-# welldone
-# README.md
+# WebTicker.log
+# WebTicker.py
