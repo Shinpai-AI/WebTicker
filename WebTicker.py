@@ -538,6 +538,45 @@ def get_recent_trades(trades: List[Dict[str, Any]], limit: int = 10) -> List[Dic
     return trades[-limit:][::-1]
 
 
+def get_symbol_rankings(trades: List[Dict[str, Any]]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """
+    Aggregiert Trades nach Symbol und gibt Top 5 / Worst 5 zurück.
+    Returns: (top_5, worst_5) - jeweils Liste von {symbol, profit, trades, win_rate}
+    """
+    # Nach Symbol gruppieren
+    by_symbol: Dict[str, List[Dict[str, Any]]] = {}
+    for trade in trades:
+        symbol = trade.get("symbol", "UNKNOWN")
+        if symbol not in by_symbol:
+            by_symbol[symbol] = []
+        by_symbol[symbol].append(trade)
+
+    # Stats pro Symbol berechnen
+    rankings = []
+    for symbol, sym_trades in by_symbol.items():
+        total_profit = sum(t.get("profit", 0) for t in sym_trades)
+        wins = sum(1 for t in sym_trades if t.get("profit", 0) > 0)
+        total = len(sym_trades)
+        win_rate = (wins / total * 100) if total > 0 else 0.0
+
+        rankings.append({
+            "symbol": symbol,
+            "profit": round(total_profit, 2),
+            "trades": total,
+            "wins": wins,
+            "win_rate": round(win_rate, 2),
+        })
+
+    # Sortieren nach Profit
+    sorted_by_profit = sorted(rankings, key=lambda x: x["profit"], reverse=True)
+
+    # Top 5 (beste) und Worst 5 (schlechteste)
+    top_5 = sorted_by_profit[:5]
+    worst_5 = sorted_by_profit[-5:][::-1]  # Umkehren für aufsteigende Reihenfolge (schlecht → sehr schlecht)
+
+    return top_5, worst_5
+
+
 # =============================================================================
 # HTML GENERATION
 # =============================================================================
@@ -560,6 +599,8 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]],
     best_7d, worst_7d = get_best_worst(trades, 7)
     best_30d, worst_30d = get_best_worst(trades, 30)
     best_365d, worst_365d = get_best_worst(trades, 365)
+
+    top_5_symbols, worst_5_symbols = get_symbol_rankings(trades)
 
     recent = get_recent_trades(trades, 10)
 
@@ -608,8 +649,25 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]],
             {trade_hint(worst, 'Worst')}
         </div>"""
 
+    def ranking_card(sym: Dict[str, Any], rank: int, is_top: bool = True) -> str:
+        profit = sym.get("profit", 0)
+        profit_cls = "pos" if profit >= 0 else "neg"
+        trades_count = sym.get("trades", 0)
+        win_rate = sym.get("win_rate", 0)
+        badge_cls = "top-badge" if is_top else "worst-badge"
+        return f"""<div class='ranking-card'>
+            <div class='rank-badge {badge_cls}'>#{rank}</div>
+            <div class='rank-symbol'>{html_escape(sym.get('symbol', ''))}</div>
+            <div class='rank-profit {profit_cls}'>{fmt_money(profit)}</div>
+            <div class='rank-meta'>{trades_count} Trades · {fmt_pct(win_rate)}</div>
+        </div>"""
+
     # Recent trades HTML
     recent_html = "".join(trade_card(t) for t in recent) if recent else "<p class='muted'>Keine Trades</p>"
+
+    # Symbol Rankings HTML
+    top_5_html = "".join(ranking_card(s, i+1, is_top=True) for i, s in enumerate(top_5_symbols)) if top_5_symbols else "<p class='muted'>–</p>"
+    worst_5_html = "".join(ranking_card(s, i+1, is_top=False) for i, s in enumerate(worst_5_symbols)) if worst_5_symbols else "<p class='muted'>–</p>"
 
     # Balance/Equity
     balance = latest_snap.get("balance", 0) if latest_snap else 0
@@ -651,6 +709,19 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]],
         .trade-meta.exit.tp {{ color: #4ade80; }}
         .trade-meta.exit.sl {{ color: #f87171; }}
         .muted {{ color: #8d95b6; }}
+        .ranking-section {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }}
+        .ranking-box {{ background: #11162a; border-radius: 12px; padding: 16px; }}
+        .ranking-box h3 {{ margin: 0 0 12px; font-size: 1.1rem; color: #9aa3c1; }}
+        .ranking-list {{ display: flex; flex-direction: column; gap: 8px; }}
+        .ranking-card {{ display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 10px; padding: 8px; background: #0a0f1d; border-radius: 8px; }}
+        .rank-badge {{ width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }}
+        .top-badge {{ background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }}
+        .worst-badge {{ background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; }}
+        .rank-symbol {{ font-weight: 600; font-size: 0.95rem; }}
+        .rank-profit {{ font-weight: 600; font-size: 1rem; text-align: right; }}
+        .rank-profit.pos {{ color: #4ade80; }}
+        .rank-profit.neg {{ color: #f87171; }}
+        .rank-meta {{ grid-column: 2 / 4; font-size: 0.75rem; color: #8d95b6; }}
     </style>
 </head>
 <body>
@@ -669,6 +740,18 @@ def generate_html(trades: List[Dict[str, Any]], snapshots: List[Dict[str, Any]],
         {window_card("Letzte 7 Tage", stats_7d, best_7d, worst_7d)}
         {window_card("Letzte 30 Tage", stats_30d, best_30d, worst_30d)}
         {window_card("Letzte 365 Tage", stats_365d, best_365d, worst_365d)}
+    </div>
+
+    <h2>Symbol-Ranking</h2>
+    <div class="ranking-section">
+        <div class="ranking-box">
+            <h3>🏆 Top 5 Performer</h3>
+            <div class="ranking-list">{top_5_html}</div>
+        </div>
+        <div class="ranking-box">
+            <h3>📉 Worst 5 Performer</h3>
+            <div class="ranking-list">{worst_5_html}</div>
+        </div>
     </div>
 
     <h2>Letzte Trades</h2>

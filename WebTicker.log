@@ -36,3 +36,210 @@
 [2026-01-30 17:24:20] INFO: WebTicker FERTIG!
 [2026-01-30 17:24:20] INFO: ==================================================
 [2026-01-30 17:24:21] ===== ERFOLG =====
+[2026-01-31 09:39:19] ===== RUN-WebTicker.sh START =====
+[2026-01-31 09:39:19] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-01-31 09:39:19] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-01-31 09:39:19] INFO: ==================================================
+[2026-01-31 09:39:19] INFO: WebTicker START
+[2026-01-31 09:39:19] INFO: ==================================================
+[2026-01-31 09:39:19] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-01-31 09:39:19] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-01-31 09:39:19] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-01-31 09:39:19] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-01-31 09:39:19] INFO: ReportHistory: 243 Trades geladen
+[2026-01-31 09:39:19] INFO: state.log gefunden: Goldjunge-state.log
+[2026-01-31 09:39:19] INFO: Lade state.log: Goldjunge-state.log
+[2026-01-31 09:39:19] INFO: state.log: 19 Trades, 484 Snapshots
+[2026-01-31 09:39:19] INFO: Gesamt: 243 Trades, 400 Snapshots
+[2026-01-31 09:39:19] INFO: JSON gespeichert: WebTicker.json
+[2026-01-31 09:39:19] INFO: HTML gespeichert: WebTicker.html
+[2026-01-31 09:39:19] INFO: ==================================================
+[2026-01-31 09:39:19] INFO: WebTicker FERTIG!
+[2026-01-31 09:39:19] INFO: ==================================================
+[2026-01-31 09:39:19] ===== ERFOLG =====
+[2026-01-31 09:47:51] ===== RUN-WebTicker.sh START =====
+[2026-01-31 09:47:51] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-01-31 09:47:51] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-01-31 09:47:51] INFO: ==================================================
+[2026-01-31 09:47:51] INFO: WebTicker START
+[2026-01-31 09:47:51] INFO: ==================================================
+[2026-01-31 09:47:51] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-01-31 09:47:51] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-01-31 09:47:51] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-01-31 09:47:51] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-01-31 09:47:51] INFO: ReportHistory: 243 Trades geladen
+[2026-01-31 09:47:51] INFO: state.log gefunden: Goldjunge-state.log
+[2026-01-31 09:47:51] INFO: Lade state.log: Goldjunge-state.log
+[2026-01-31 09:47:51] INFO: state.log: 19 Trades, 486 Snapshots
+[2026-01-31 09:47:51] INFO: Gesamt: 243 Trades, 400 Snapshots
+[2026-01-31 09:47:51] INFO: JSON gespeichert: WebTicker.json
+[2026-01-31 09:47:51] INFO: HTML gespeichert: WebTicker.html
+[2026-01-31 09:47:51] INFO: ==================================================
+[2026-01-31 09:47:51] INFO: WebTicker FERTIG!
+[2026-01-31 09:47:51] INFO: ==================================================
+[2026-01-31 09:47:51] ===== ERFOLG =====
+[2026-03-01 10:00:05] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:00:05] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-03-01 10:00:05] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:00:05] INFO: ==================================================
+[2026-03-01 10:00:05] INFO: WebTicker START
+[2026-03-01 10:00:05] INFO: ==================================================
+[2026-03-01 10:00:05] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:00:05] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:00:05] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:00:05] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:00:05] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:00:05] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:00:05] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:00:06] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:00:06] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:00:06] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:00:06] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:00:06] INFO: ==================================================
+[2026-03-01 10:00:06] INFO: WebTicker FERTIG!
+[2026-03-01 10:00:06] INFO: ==================================================
+[2026-03-01 10:00:06] ===== ERFOLG =====
+[2026-03-01 10:05:40] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:05:40] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-03-01 10:05:40] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:05:40] INFO: ==================================================
+[2026-03-01 10:05:40] INFO: WebTicker START
+[2026-03-01 10:05:40] INFO: ==================================================
+[2026-03-01 10:05:40] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:05:40] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:05:40] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:05:40] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:05:41] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:05:41] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:05:41] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:05:41] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:05:41] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:05:41] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:05:41] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:05:41] INFO: ==================================================
+[2026-03-01 10:05:41] INFO: WebTicker FERTIG!
+[2026-03-01 10:05:41] INFO: ==================================================
+[2026-03-01 10:05:41] ===== ERFOLG =====
+[2026-03-01 10:24:49] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:24:49] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-03-01 10:24:49] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:24:49] INFO: ==================================================
+[2026-03-01 10:24:49] INFO: WebTicker START
+[2026-03-01 10:24:49] INFO: ==================================================
+[2026-03-01 10:24:49] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:24:49] INFO: State-Log nicht in MT5: /home/shinpai/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:24:49] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:24:49] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:24:49] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:24:49] INFO: state.log nicht gefunden - nur ReportHistory nutzen
+[2026-03-01 10:24:49] INFO: Gesamt: 257 Trades, 0 Snapshots
+[2026-03-01 10:24:49] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:24:49] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:24:49] INFO: ==================================================
+[2026-03-01 10:24:49] INFO: WebTicker FERTIG!
+[2026-03-01 10:24:49] INFO: ==================================================
+[2026-03-01 10:24:50] ===== ERFOLG =====
+[2026-03-01 10:27:23] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:27:23] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-03-01 10:27:23] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:27:23] INFO: ==================================================
+[2026-03-01 10:27:23] INFO: WebTicker START
+[2026-03-01 10:27:23] INFO: ==================================================
+[2026-03-01 10:27:23] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:27:23] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:27:23] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:27:23] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:27:23] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:27:23] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:27:23] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:27:23] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:27:23] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:27:23] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:27:23] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:27:23] INFO: ==================================================
+[2026-03-01 10:27:23] INFO: WebTicker FERTIG!
+[2026-03-01 10:27:23] INFO: ==================================================
+[2026-03-01 10:27:23] ===== ERFOLG =====
+[2026-03-01 10:28:51] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:28:51] Nutze parent venv: /home/haze/Trading/WebTicker/../venv/bin/python3
+[2026-03-01 10:28:51] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:28:51] INFO: ==================================================
+[2026-03-01 10:28:51] INFO: WebTicker START
+[2026-03-01 10:28:51] INFO: ==================================================
+[2026-03-01 10:28:51] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:28:51] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:28:51] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:28:51] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:28:51] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:28:51] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:28:51] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:28:51] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:28:51] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:28:51] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:28:51] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:28:51] INFO: ==================================================
+[2026-03-01 10:28:51] INFO: WebTicker FERTIG!
+[2026-03-01 10:28:51] INFO: ==================================================
+[2026-03-01 10:28:51] ===== ERFOLG =====
+[2026-03-01 10:39:16] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:39:16] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:39:16] INFO: ==================================================
+[2026-03-01 10:39:16] INFO: WebTicker START
+[2026-03-01 10:39:16] INFO: ==================================================
+[2026-03-01 10:39:16] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:39:16] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:39:16] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:39:16] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:39:16] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:39:16] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:39:16] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:39:16] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:39:16] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:39:16] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:39:16] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:39:16] INFO: ==================================================
+[2026-03-01 10:39:16] INFO: WebTicker FERTIG!
+[2026-03-01 10:39:16] INFO: ==================================================
+[2026-03-01 10:39:16] WebTicker OK — Git Push...
+[main 6de649f] chore: update web ticker (2026-03-01 10:39:16)
+ 2 files changed, 9447 insertions(+), 67 deletions(-)
+To github.com:Shinpai-AI/WebTicker.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:Shinpai-AI/WebTicker.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-03-01 10:39:18] Git: Push erfolgreich
+[2026-03-01 10:50:07] ===== RUN-WebTicker.sh START =====
+[2026-03-01 10:50:07] Starte: /home/haze/Trading/WebTicker/../venv/bin/python3 WebTicker.py
+[2026-03-01 10:50:07] INFO: ==================================================
+[2026-03-01 10:50:07] INFO: WebTicker START
+[2026-03-01 10:50:07] INFO: ==================================================
+[2026-03-01 10:50:07] INFO: Lade Config: /home/haze/Trading/TKB-config.json
+[2026-03-01 10:50:07] INFO: State-Log aus MT5: /home/haze/.wine/drive_c/Program Files/MetaTrader 5/MQL5/Files/Goldjunge-state.log
+[2026-03-01 10:50:07] INFO: ReportHistory gefunden: ReportHistory-8304024.html
+[2026-03-01 10:50:07] INFO: Lade ReportHistory: ReportHistory-8304024.html
+[2026-03-01 10:50:08] INFO: ReportHistory: 257 Trades geladen
+[2026-03-01 10:50:08] INFO: state.log gefunden: Goldjunge-state.log
+[2026-03-01 10:50:08] INFO: Lade state.log: Goldjunge-state.log
+[2026-03-01 10:50:08] INFO: state.log: 62 Trades, 1948 Snapshots
+[2026-03-01 10:50:08] INFO: Gesamt: 257 Trades, 1525 Snapshots
+[2026-03-01 10:50:08] INFO: JSON gespeichert: WebTicker.json
+[2026-03-01 10:50:08] INFO: HTML gespeichert: WebTicker.html
+[2026-03-01 10:50:08] INFO: ==================================================
+[2026-03-01 10:50:08] INFO: WebTicker FERTIG!
+[2026-03-01 10:50:08] INFO: ==================================================
+[2026-03-01 10:50:08] WebTicker OK — Git Push...
+[main 3afce84] chore: update web ticker (2026-03-01 10:50:08)
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+To github.com:Shinpai-AI/WebTicker.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:Shinpai-AI/WebTicker.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+[2026-03-01 10:50:10] Git: Push erfolgreich
