@@ -33,116 +33,191 @@
         .trade-meta.exit.tp { color: #4ade80; }
         .trade-meta.exit.sl { color: #f87171; }
         .muted { color: #8d95b6; }
+        .ranking-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .ranking-box { background: #11162a; border-radius: 12px; padding: 16px; }
+        .ranking-box h3 { margin: 0 0 12px; font-size: 1.1rem; color: #9aa3c1; }
+        .ranking-list { display: flex; flex-direction: column; gap: 8px; }
+        .ranking-card { display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 10px; padding: 8px; background: #0a0f1d; border-radius: 8px; }
+        .rank-badge { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; }
+        .top-badge { background: linear-gradient(135deg, #22c55e, #16a34a); color: #fff; }
+        .worst-badge { background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; }
+        .rank-symbol { font-weight: 600; font-size: 0.95rem; }
+        .rank-profit { font-weight: 600; font-size: 1rem; text-align: right; }
+        .rank-profit.pos { color: #4ade80; }
+        .rank-profit.neg { color: #f87171; }
+        .rank-meta { grid-column: 2 / 4; font-size: 0.75rem; color: #8d95b6; }
     </style>
 </head>
 <body>
     <h1>Goldjunge (Ray) Live-Ticker</h1>
-    <div class="meta">Snapshot: – · Generiert: 2026-01-30T16:24:20Z</div>
+    <div class="meta">Snapshot: 2026-02-27T21:57:59Z · Generiert: 2026-03-01T10:39:16Z</div>
 
     <div class="cards">
-        <div class="card"><div class="label">Balance</div><div class="value">0.00</div></div>
-        <div class="card"><div class="label">Equity</div><div class="value">0.00</div></div>
-        <div class="card"><div class="label">Win-Rate gesamt</div><div class="value">52.67%</div></div>
-        <div class="card"><div class="label">Trades gesamt</div><div class="value">243</div></div>
+        <div class="card"><div class="label">Balance</div><div class="value">156.66</div></div>
+        <div class="card"><div class="label">Equity</div><div class="value">156.66</div></div>
+        <div class="card"><div class="label">Win-Rate gesamt</div><div class="value">52.92%</div></div>
+        <div class="card"><div class="label">Trades gesamt</div><div class="value">257</div></div>
     </div>
 
     <h2>Performance-Fenster</h2>
     <div class="stat-grid">
         <div class='stat-card'>
             <div class='label'>Letzte 7 Tage</div>
-            <div class='value'>3.62</div>
-            <div class='meta-line'>3 Trades · 66.67%</div>
-            <div class='sub-line pos'>Best: NAS100 SELL 0.10 Lot 2.78</div>
-            <div class='sub-line neg'>Worst: NAS100 BUY 0.10 Lot -1.49</div>
+            <div class='value'>10.05</div>
+            <div class='meta-line'>2 Trades · 50.00%</div>
+            <div class='sub-line pos'>Best: SPX500 BUY 0.50 Lot 10.09</div>
+            <div class='sub-line neg'>Worst: SPX500 SELL 0.50 Lot -0.04</div>
         </div>
         <div class='stat-card'>
             <div class='label'>Letzte 30 Tage</div>
-            <div class='value'>-26.99</div>
-            <div class='meta-line'>32 Trades · 46.88%</div>
-            <div class='sub-line pos'>Best: NAS100 BUY 0.10 Lot 2.85</div>
-            <div class='sub-line neg'>Worst: NAS100 BUY 0.10 Lot -13.42</div>
+            <div class='value'>13.79</div>
+            <div class='meta-line'>15 Trades · 60.00%</div>
+            <div class='sub-line pos'>Best: SPX500 BUY 0.50 Lot 10.09</div>
+            <div class='sub-line neg'>Worst: NAS100 BUY 0.10 Lot -5.40</div>
         </div>
         <div class='stat-card'>
             <div class='label'>Letzte 365 Tage</div>
-            <div class='value'>-91.92</div>
-            <div class='meta-line'>243 Trades · 52.67%</div>
-            <div class='sub-line pos'>Best: CHFJPY SELL 0.02 Lot 7.68</div>
+            <div class='value'>-80.46</div>
+            <div class='meta-line'>257 Trades · 52.92%</div>
+            <div class='sub-line pos'>Best: SPX500 BUY 0.50 Lot 10.09</div>
             <div class='sub-line neg'>Worst: NAS100 BUY 0.10 Lot -13.42</div>
+        </div>
+    </div>
+
+    <h2>Symbol-Ranking</h2>
+    <div class="ranking-section">
+        <div class="ranking-box">
+            <h3>🏆 Top 5 Performer</h3>
+            <div class="ranking-list"><div class='ranking-card'>
+            <div class='rank-badge top-badge'>#1</div>
+            <div class='rank-symbol'>EURUSD</div>
+            <div class='rank-profit pos'>11.57</div>
+            <div class='rank-meta'>9 Trades · 66.67%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge top-badge'>#2</div>
+            <div class='rank-symbol'>SPX500</div>
+            <div class='rank-profit pos'>6.94</div>
+            <div class='rank-meta'>5 Trades · 40.00%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge top-badge'>#3</div>
+            <div class='rank-symbol'>CHFJPY</div>
+            <div class='rank-profit pos'>3.34</div>
+            <div class='rank-meta'>18 Trades · 50.00%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge top-badge'>#4</div>
+            <div class='rank-symbol'>USDCAD</div>
+            <div class='rank-profit pos'>1.93</div>
+            <div class='rank-meta'>2 Trades · 100.00%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge top-badge'>#5</div>
+            <div class='rank-symbol'>EURGBP</div>
+            <div class='rank-profit pos'>1.41</div>
+            <div class='rank-meta'>11 Trades · 45.45%</div>
+        </div></div>
+        </div>
+        <div class="ranking-box">
+            <h3>📉 Worst 5 Performer</h3>
+            <div class="ranking-list"><div class='ranking-card'>
+            <div class='rank-badge worst-badge'>#1</div>
+            <div class='rank-symbol'>GBPUSD</div>
+            <div class='rank-profit neg'>-18.29</div>
+            <div class='rank-meta'>26 Trades · 50.00%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge worst-badge'>#2</div>
+            <div class='rank-symbol'>NAS100</div>
+            <div class='rank-profit neg'>-17.03</div>
+            <div class='rank-meta'>14 Trades · 57.14%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge worst-badge'>#3</div>
+            <div class='rank-symbol'>USDCHF</div>
+            <div class='rank-profit neg'>-13.76</div>
+            <div class='rank-meta'>13 Trades · 38.46%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge worst-badge'>#4</div>
+            <div class='rank-symbol'>AUDJPY</div>
+            <div class='rank-profit neg'>-8.28</div>
+            <div class='rank-meta'>9 Trades · 44.44%</div>
+        </div><div class='ranking-card'>
+            <div class='rank-badge worst-badge'>#5</div>
+            <div class='rank-symbol'>USDJPY</div>
+            <div class='rank-profit neg'>-7.61</div>
+            <div class='rank-meta'>11 Trades · 27.27%</div>
+        </div></div>
         </div>
     </div>
 
     <h2>Letzte Trades</h2>
     <div class="trade-grid">
         <div class='trade-card'>
-            <div class='trade-top'>NAS100
+            <div class='trade-top'>SPX500
                 · <span class="side sell">SELL</span>
-                · 0.10 Lot</div>
-            <div class='trade-profit pos'>2.33</div>
+                · 0.50 Lot</div>
+            <div class='trade-profit neg'>-0.04</div>
             <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-30T14:46:35Z</div>
+            <div class='trade-meta'>2026-02-24T15:00:22Z</div>
         </div><div class='trade-card'>
-            <div class='trade-top'>NAS100
-                · <span class="side sell">SELL</span>
-                · 0.10 Lot</div>
-            <div class='trade-profit pos'>2.78</div>
-            <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-28T19:02:14Z</div>
-        </div><div class='trade-card'>
-            <div class='trade-top'>NAS100
+            <div class='trade-top'>SPX500
                 · <span class="side buy">BUY</span>
-                · 0.10 Lot</div>
-            <div class='trade-profit neg'>-1.49</div>
-            <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-27T15:05:29Z</div>
-        </div><div class='trade-card'>
-            <div class='trade-top'>NAS100
-                · <span class="side buy">BUY</span>
-                · 0.10 Lot</div>
-            <div class='trade-profit neg'>-1.81</div>
-            <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-23T14:46:51Z</div>
-        </div><div class='trade-card'>
-            <div class='trade-top'>GBPUSD
-                · <span class="side buy">BUY</span>
-                · 0.03 Lot</div>
-            <div class='trade-profit pos'>0.85</div>
-            <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-23T07:00:16Z</div>
-        </div><div class='trade-card'>
-            <div class='trade-top'>GBPUSD
-                · <span class="side sell">SELL</span>
-                · 0.03 Lot</div>
-            <div class='trade-profit neg'>-3.72</div>
+                · 0.50 Lot</div>
+            <div class='trade-profit pos'>10.09</div>
             <div class='trade-meta exit sl'>Exit: SL</div>
-            <div class='trade-meta'>2026-01-21T07:26:23Z</div>
+            <div class='trade-meta'>2026-02-24T14:55:49Z</div>
+        </div><div class='trade-card'>
+            <div class='trade-top'>SPX500
+                · <span class="side sell">SELL</span>
+                · 0.50 Lot</div>
+            <div class='trade-profit neg'>-2.26</div>
+            <div class='trade-meta exit manual'>Exit Manual</div>
+            <div class='trade-meta'>2026-02-17T13:20:08Z</div>
         </div><div class='trade-card'>
             <div class='trade-top'>NAS100
                 · <span class="side buy">BUY</span>
                 · 0.10 Lot</div>
-            <div class='trade-profit neg'>-1.34</div>
+            <div class='trade-profit pos'>0.33</div>
             <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-20T21:52:48Z</div>
+            <div class='trade-meta'>2026-02-13T15:00:26Z</div>
         </div><div class='trade-card'>
-            <div class='trade-top'>GBPUSD
+            <div class='trade-top'>NAS100
                 · <span class="side buy">BUY</span>
-                · 0.03 Lot</div>
-            <div class='trade-profit neg'>-0.65</div>
+                · 0.10 Lot</div>
+            <div class='trade-profit neg'>-5.40</div>
             <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-20T07:56:46Z</div>
+            <div class='trade-meta'>2026-02-13T14:33:52Z</div>
         </div><div class='trade-card'>
-            <div class='trade-top'>USDCHF
-                · <span class="side sell">SELL</span>
-                · 0.01 Lot</div>
-            <div class='trade-profit neg'>-0.32</div>
+            <div class='trade-top'>NAS100
+                · <span class="side buy">BUY</span>
+                · 0.10 Lot</div>
+            <div class='trade-profit pos'>1.87</div>
             <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-20T07:26:31Z</div>
+            <div class='trade-meta'>2026-02-12T18:59:00Z</div>
+        </div><div class='trade-card'>
+            <div class='trade-top'>SPX500
+                · <span class="side buy">BUY</span>
+                · 0.50 Lot</div>
+            <div class='trade-profit neg'>-0.93</div>
+            <div class='trade-meta exit manual'>Exit Manual</div>
+            <div class='trade-meta'>2026-02-11T13:29:00Z</div>
+        </div><div class='trade-card'>
+            <div class='trade-top'>AUDUSD
+                · <span class="side buy">BUY</span>
+                · 0.05 Lot</div>
+            <div class='trade-profit neg'>-2.99</div>
+            <div class='trade-meta exit sl'>Exit: SL</div>
+            <div class='trade-meta'>2026-02-09T01:53:54Z</div>
+        </div><div class='trade-card'>
+            <div class='trade-top'>SPX500
+                · <span class="side buy">BUY</span>
+                · 0.50 Lot</div>
+            <div class='trade-profit pos'>0.08</div>
+            <div class='trade-meta exit manual'>Exit Manual</div>
+            <div class='trade-meta'>2026-02-06T13:30:47Z</div>
         </div><div class='trade-card'>
             <div class='trade-top'>GBPUSD
                 · <span class="side sell">SELL</span>
                 · 0.03 Lot</div>
-            <div class='trade-profit pos'>0.28</div>
-            <div class='trade-meta exit manual'>Exit Manual</div>
-            <div class='trade-meta'>2026-01-20T07:04:43Z</div>
+            <div class='trade-profit pos'>6.29</div>
+            <div class='trade-meta exit sl'>Exit: SL</div>
+            <div class='trade-meta'>2026-02-05T12:00:55Z</div>
         </div>
     </div>
 </body>
